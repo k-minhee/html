@@ -1,0 +1,136 @@
+#wrap {background-color: gray;}
+#wrap header {
+    background-color: aqua;
+}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {
+    background-color: yellow;
+}
+#wrap header nav ul{}
+#wrap header nav ul li {}
+#wrap header nav ul li a {
+    font-size: 1.13rem;
+    font-weight: 600;
+    color: #000;
+}
+#wrap header .right_menu {
+    background-color: lime;
+}
+#wrap header .right_menu > a {
+/*   font-size: 1rem;
+    font-weight: 400;
+    color: #000; */
+    /* 기본값이므로 쓸 필요 없음 */
+}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li a {}
+#wrap header .right_menu ul li a img {}
+#wrap main {
+    background-color: beige;
+}
+#wrap main .path {
+    background-color: #f9f9f9;
+}
+}
+#wrap main .path a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #000;
+}
+#wrap main .path em {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #000;
+}
+#wrap main h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+#wrap main > p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #555;
+}
+#wrap main .bg {
+    background-color: #f9f9f9;
+}
+#wrap main .bg p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+}
+#wrap main .bg h2 {
+    font-size: 1.375rem ;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #36B4E5;
+}
+#wrap main .bg p em {
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000;
+}
+#wrap main .bg .goal_contents {
+    background-color: yellow;
+}
+#wrap main .bg .goal_contents li {
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+}
+#wrap main .bg .goal_contents li img {}
+#wrap main .bg .goal_contents li img span {}
+#wrap main .strategy_contents {
+    background-color: lime;
+}
+#wrap main .strategy_contents dl {
+    background-color: #eee;
+}
+#wrap main .strategy_contents dl dt {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000;
+}
+#wrap main .strategy_contents dl dd {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+}
+#wrap footer {
+    background-color: aqua;
+}
+#wrap footer .ft_left {
+    background-color: yellow;
+}
+#wrap footer .ft_left .ft_menu {
+    background-color: lime;
+}
+#wrap footer .ft_left .ft_menu a {
+    font-size: 1.125rem;
+    color: #555;
+}
+#wrap footer .ft_left .ft_menu a em {}
+#wrap footer .ft_left .ft_menu a img {}
+#wrap footer .ft_left address {
+    background-color: aquamarine;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: #555;
+}
+#wrap footer .ft_left address em {}
+#wrap footer .ft_left p {}
+#wrap footer .ft_right {
+    background-color: coral;
+}
+#wrap footer .ft_right .family {}
+#wrap footer .ft_right .family img {}
+#wrap footer .ft_right .site {}
+#wrap footer .ft_right .site img {}
