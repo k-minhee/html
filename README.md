@@ -96,3 +96,5 @@
 * 위 태그에서 `em {text-align:cetner}`를 적용한다면?
 : em의 자식, 자손 중에 인라인에 해당하는 대상을 오른쪽 정렬해라
 * div를 중앙정렬하고 싶다면, div를 display:inline 혹은 display:inline-block 설정한 뒤, text-align 속성을 적용하면 된다.
+## #wrap main .bg .goal_contents li * {}
+* 별표는 li의 모든 자식 자손들에게 하겠다.

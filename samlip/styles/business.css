@@ -1,0 +1,31 @@
+#wrap {}
+#wrap header {}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {}
+#wrap header nav ul{}
+#wrap header nav ul li {}
+#wrap header nav ul li a {}
+#wrap header .right_menu {}
+#wrap header .right_menu > a {}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li a {}
+#wrap header .right_menu ul li a img {}
+/* ==================메인 시작===================== */
+#wrap main {background-color: bisque;}
+#wrap main .path {background-color: aquamarine;}
+#wrap main .path a {}
+#wrap main .path em {}
+#wrap main h1 {}
+#wrap main p {}
+#wrap main .contents_bg {background-color: gainsboro;}
+#wrap main .contents_bg .contents {background-color: honeydew;}
+#wrap main .contents_bg .contents > p {background-color: cadetblue;}
+#wrap main .contents_bg .contents > p img {}
+#wrap main .contents_bg .contents .contents_text_wrap {}
+#wrap main .contents_bg .contents .contents_text_wrap .text_title {background-color: yellowgreen;}
+#wrap main .contents_bg .contents .contents_text_wrap .text_title .order {}
+#wrap main .contents_bg .contents .contents_text_wrap h2 {}
+#wrap main .contents_bg .contents .contents_text_wrap .contents_text {background-color: aqua;}
