@@ -2,6 +2,7 @@ body,html,h1,h2,h3,h4,h5,h6,
 p,div,dl,dt,dd,ul,ol,li,video,blockquote,hr,a,address,
 span,em,img,strong,sub,sup,del,s,mark,code, header, main, nav, footer, article, section, aside {
     line-height:1.0; font-size:1.0em; font-weight: normal; margin:0; padding:0; font-style: normal;
+    letter-spacing: -0.2px;
     font-family: 'Pretendard', sans-serif;
     box-sizing: border-box;
 }

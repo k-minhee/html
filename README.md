@@ -98,3 +98,25 @@
 * div를 중앙정렬하고 싶다면, div를 display:inline 혹은 display:inline-block 설정한 뒤, text-align 속성을 적용하면 된다.
 ## #wrap main .bg .goal_contents li * {}
 * 별표는 li의 모든 자식 자손들에게 하겠다.
+----------
+### 블록과 인라인 정렬
+* 정렬대상 요소가 인라인태그거나 또는 블록인데 display:inline-block 명령으로 인라인특징이 적용된 경우 그 부모 대상에 'text-align:정렬값' 왼쪽, 가운데, 오른쪽 정렬할 수 있다.
+### 블록 요소를 가운데 정렬하는 경우
+* 조건 : 사용자의 디바이스 너비보다 가운데정렬하는 대상의 너비가 작아야 한다.
+* 이 방법은 주로 데스크탑에서만 사용한다.
+* 선행조건: `가운데정렬요소선택자 {width:1000~1400px}`
+* 적용방법: 와이드형태의 데스크탑은 사이트너비 바깥쪽 여백을 고정할 수 없기 때문에 특정 값을 입력할 수 없다.
+* `가운데정렬요소선택자 {width:1000~1400px; margin:0 auto;}
+* ★컨텐츠 너비를 가지고 있는 큰 레이아웃에 주로 사용하는 방법이다!
+--------
+## img태그와 background-image CSS속성 차이
+* img태그는 이미지만으로 구성된 인라인태그로 크기를 입력하지 않아도 자동으로 원본크기를 유지하며 추가적으로 모든 css 입력이 가능하다. 예) width, height, padding, margin, border 등등...
+* background-image속성은 태그가 아닌 꾸미기 속성이기 때문에 img태그 다르게 자동으로 원본크기가 나타나지 않으며 배경이미지가 들어간 요소의 크기 안에서만 나타난다. 또한 추가적인 css속성을 주려면 background-로 시작하는 속성만 가능하고 그 외 속성은 모두 불가능하다.
+--------
+## background 통합속성은 background적용 선택자가 1개일 때 사용한다.
+* background: color url() repeat position;
+## background 개별속성은 적용선택자가 2개 이상일 때(nth등 포함) 사용한다.
+* `background-color`
+* `background-image`
+* `background-repeat`
+* `background-positioni`
