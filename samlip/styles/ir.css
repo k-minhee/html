@@ -26,6 +26,7 @@
 #wrap main .bg .corporate {
     background-color: antiquewhite;
     width: 1140px; margin: 0 auto;
+    overflow: hidden;
 }
 #wrap main .bg .corporate li {
     background-color: aquamarine;
@@ -36,7 +37,7 @@
     background-size: 100px auto;
     background-image: url(../images/info/cr01.png);
     padding: 30px;
-    display: inline-block;
+    float: left;
     margin-right: 42.5px;
 }
 #wrap main .bg .corporate li:nth-child(1) {}
