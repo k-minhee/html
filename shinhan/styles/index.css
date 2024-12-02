@@ -1,19 +1,19 @@
-#wrap {background-color: brown;}
+#wrap {}
 #wrap header {
     background-color: rgba(0,0,0,0.1);
     padding: 21px 80px;
     /* header는 모든 사이트에서 높이가 고정되는 경우가 90% 이상이다 */
     /* float 오류해결법 사용됨 */
     height: 80px;
+    position: fixed; width: 100%; left: 0; top: 0; z-index: 999;
+    /* 크기를 내용 만큼만 인식하게 되므로, 너비를 블록이어도 다시 한번 기본값으로 설정해줘야 함, 좌표값도 쓰는 게 좋음*/
 }
 #wrap header h1 {
-    background-color: aqua;
     float: left; padding-top:3px;
 }
 #wrap header h1 a {}
 #wrap header h1 a img {}
 #wrap header nav {
-    background-color: coral;
     float: right;
 }
 #wrap header nav ul {
@@ -35,42 +35,174 @@
     border: 1px solid #fff;
     display: block; /* <a>태그가 인라인 속성도 갖고 있어 영역을 잡아주기 위함 */
 }
-#wrap main {background-color: lime;}
+#wrap main {}
 /* =============================메인 1~4행 공통선택자 */
-#wrap main .container {background-color: beige;}
+#wrap main .container {}
 #wrap main .container .contents {
-    background-color: pink;
+    width: 1440px; height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.3); /* 제거용 색상 */
 }
 #wrap main .container .contents .txt {
-    background-color: aqua;
+    background-color: orange;
 }
-#wrap main .container .contents .txt h1 {}
-#wrap main .container .contents .txt h1 span {}
-#wrap main .container .contents .txt p {}
+#wrap main .container .contents .txt h1 {
+    font-size: 4.38rem; font-weight: 700;
+    color: #fff; line-height: 1.3;
+}
+#wrap main .container .contents .txt h1 span {
+    font-weight: 700; color: #5EE1FF;
+
+}
+#wrap main .container .contents .txt h1+p {
+    font-size: 1.5rem; font-weight: 500;
+    color: #fff; line-height: 1.5;
+    letter-spacing: -0.02px;
+    margin: 20px 0;
+}
 /* =============================메인 1~4행 결제 편리함 */
 #wrap main .pay {
     background-image: url(../images/row1.jpg);
+    background-size: cover;
 }
-#wrap main .pay .contents {}
-#wrap main .pay .contents .txt {}
+#wrap main .pay .contents {position: relative;}
+#wrap main .pay .contents .txt {
+    padding-top: 231px;
+}
 #wrap main .pay .contents .txt h1 {}
 #wrap main .pay .contents .txt h1 span {}
 #wrap main .pay .contents .txt p {}
 #wrap main .pay .contents .txt .bnr_btn_wrap {
-    background-color: purple;
 }
+#wrap main .pay .contents .txt .bnr_btn_wrap > * {margin-right: 10px;} /* 자식 전체선택하고 싶을 때 *잊지않기 */
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev {}
-#wrap main .pay .contents .txt .bnr_btn_wrap .prev img {}
-#wrap main .pay .contents .txt .bnr_btn_wrap .progress {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .prev img {
+    display: inline-block;
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress {
+    display: inline-block;
+    width: 100px; height: 2px;
+    background-color: rgba(255,255,255,0.3);
+    position: relative; bottom: 10px;
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress:nth-child(4) {
+    background-color: rgba(255,255,255,1);
+}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause {}
-#wrap main .pay .contents .txt .bnr_btn_wrap .pause img {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .pause img {
+    display: inline-block;
+}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next {}
-#wrap main .pay .contents .txt .bnr_btn_wrap .next img {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .next img {
+    display: inline-block;
+}
 #wrap main .pay .contents .scroll {
-    background-color: brown;
+    position: absolute; right: 0; bottom: 43px;
 }
 #wrap main .pay .contents .scroll span {}
-#wrap main .pay .contents .scroll span:nth-child(1) {}
-#wrap main .pay .contents .scroll .scroll_bg {}
-#wrap main .pay .contents .scroll .scroll_bg .bar {}
+#wrap main .pay .contents .scroll span:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 0.88 rem; color: #fff;
+    position: relative; top: 6px; /* 이 요소 하나만 움직이고 싶을 때, position 이용 */
+    line-height: 1.3; font-weight: 500;
+}
+#wrap main .pay .contents .scroll .scroll_bg {
+    display: inline-block;
+    width: 12px; height: 30px;
+    background-color: #555;
+    border-radius: 6px;
+}
+#wrap main .pay .contents .scroll .scroll_bg .bar {
+    display: inline-block;
+    width: 8px; height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative; left: 2px; top: -5px; /* 개발자도구 이용해서 좌표 체크한 뒤 작성하기 */
+}
+/* 2페이지(OUR SERVICES) 시작 */
+#wrap main .service {
+    background-image: url(../images/row2.jpg);
+    background-size: cover;
+}
+#wrap main .service .contents {}
+#wrap main .service .contents .txt {
+    float: left;
+    padding-top: 311px;
+    width: 507px;
+}
+#wrap main .service .contents .txt .sub_title {
+    text-transform: uppercase;
+    font-size: 1.56rem; font-weight: 600;
+    color: #fff; margin-bottom: 20px;
+}
+#wrap main .service .contents .txt h1 {}
+#wrap main .service .contents .txt p {}
+/* 카드요소 공통 선택자 */
+#wrap main .service .contents .card {
+    float: right;
+}
+#wrap main .service .contents .card .card_contents {
+    background-color: cadetblue;
+    width: 331px;
+    border-radius: 25px;
+    background-size: 100%; /* 331px auto로 설정해도 가능함 */
+}
+#wrap main .service .contents .card .card_contents .inside {
+    position: relative; top: 200px;
+    background-color: #fff;
+    padding: 30px 20px 20px 20px;
+    border-radius: 0 0 25px 25px;
+}
+#wrap main .service .contents .card .card_contents .inside h2 {
+    background-color: aqua;
+    font-size: 1.57rem; font-weight: 600;
+    margin-bottom: 35px;
+}
+#wrap main .service .contents .card .card_contents .inside p {
+    background-color: coral;
+    line-height: 1.5; color: #555;
+    margin-bottom: 35px;
+}
+#wrap main .service .contents .card .card_contents .inside .detail {
+    display: inline-block;
+    padding: 10px 0;
+    border-top: 1px solid #000;
+    background-color: burlywood;
+}
+#wrap main .service .contents .card .card_contents .inside .detail span {
+    display: inline-block; width: 260px;
+    line-height: 1.5; letter-spacing: -0.02px;
+    font-weight: 600;
+}
+#wrap main .service .contents .card .card_contents .inside .detail img {
+    position: relative; top: 6px;
+}
+/* 카드요소 개별 선택자 - credit 신용카드 */
+#wrap main .service .contents .card .credit {
+    display: inline-block;
+    position: relative; top:157px;
+    margin-right: 20px;
+    background-image: url(../images/card_bg1.jpg);
 
+}
+#wrap main .service .contents .card .credit .inside {}
+#wrap main .service .contents .card .credit .inside h2 {
+}
+#wrap main .service .contents .card .credit .inside p {}
+#wrap main .service .contents .card .credit .inside .detail {}
+#wrap main .service .contents .card .credit .inside .detail span {}
+#wrap main .service .contents .card .credit .inside .detail img {}
+/* 카드요소 개별 선택자 - account 가상계좌 */
+#wrap main .service .contents .account {
+    display: inline-block;
+    position: relative; top:331px;
+    background-image: url(../images/card_bg2.jpg);
+    background-size: contain;
+    opacity: 0.6;
+}
+#wrap main .service .contents .card .account .inside {}
+#wrap main .service .contents .card .account .inside h2 {}
+#wrap main .service .contents .card .account .inside p {}
+#wrap main .service .contents .card .account .inside .detail {}
+#wrap main .service .contents .card .account .inside .detail span {}
+#wrap main .service .contents .card .account .inside .detail img {}
