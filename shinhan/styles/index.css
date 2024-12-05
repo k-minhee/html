@@ -46,6 +46,11 @@
 #wrap main .container .contents .txt {
     background-color: orange;
 }
+#wrap main .container .contents .txt .sub_title {
+    text-transform: uppercase;
+    font-size: 1.56rem; font-weight: 600;
+    color: #fff; margin-bottom: 20px;
+}
 #wrap main .container .contents .txt h1 {
     font-size: 4.38rem; font-weight: 700;
     color: #fff; line-height: 1.3;
@@ -119,28 +124,21 @@
     border-radius: 50%;
     position: relative; left: 2px; top: -5px; /* 개발자도구 이용해서 좌표 체크한 뒤 작성하기 */
 }
-/* 2페이지(OUR SERVICES) 시작 */
+/* ===============================================2페이지(OUR SERVICES) 시작 */
 #wrap main .service {
     background-image: url(../images/row2.jpg);
     background-size: cover;
 }
-#wrap main .service .contents {}
+#wrap main .service .contents {overflow: hidden;}
 #wrap main .service .contents .txt {
     float: left;
     padding-top: 311px;
     width: 507px;
 }
-#wrap main .service .contents .txt .sub_title {
-    text-transform: uppercase;
-    font-size: 1.56rem; font-weight: 600;
-    color: #fff; margin-bottom: 20px;
-}
 #wrap main .service .contents .txt h1 {}
 #wrap main .service .contents .txt p {}
 /* 카드요소 공통 선택자 */
-#wrap main .service .contents .card {
-    float: right;
-}
+#wrap main .service .contents .card {float: right;}
 #wrap main .service .contents .card .card_contents {
     background-color: cadetblue;
     width: 331px;
@@ -173,6 +171,7 @@
     display: inline-block; width: 260px;
     line-height: 1.5; letter-spacing: -0.02px;
     font-weight: 600;
+    background-size: 100%;
 }
 #wrap main .service .contents .card .card_contents .inside .detail img {
     position: relative; top: 6px;
@@ -183,6 +182,7 @@
     position: relative; top:157px;
     margin-right: 20px;
     background-image: url(../images/card_bg1.jpg);
+    background-size: 100%;
 
 }
 #wrap main .service .contents .card .credit .inside {}
@@ -206,3 +206,92 @@
 #wrap main .service .contents .card .account .inside .detail {}
 #wrap main .service .contents .card .account .inside .detail span {}
 #wrap main .service .contents .card .account .inside .detail img {}
+/* ==========================================================3페이지 왜 신한은행 pg~~시작 */
+#wrap main .different {
+    background-image: url(../images/row3.jpg);
+    background-size: cover;
+}
+#wrap main .different .contents {}
+#wrap main .different .contents .txt {
+    text-align: center; padding-top: 162px;
+}
+#wrap main .different .contents .txt .sub_title {}
+#wrap main .different .contents .txt .sub_title h1 {}
+#wrap main .different .contents .txt .sub_title h1 span {}
+#wrap main .different .contents .txt .sub_title h1+p {}
+#wrap main .different .contents ol {
+    overflow: hidden; margin-top: 109px;
+}
+#wrap main .different .contents ol li {
+    width: 290px; height: 290px; /* 보통은 보더를 포함해서 크기 계산함 */
+    border-radius: 50%;
+    border: 20px solid rgba(255,255,255,0.5);
+    position: relative; /* after가상요소의 부모설정 */
+    float: left; margin-right: 93.33px;
+    text-align: center;
+}
+#wrap main .different .contents ol li::after {
+    /* 태그를 낭비하지 않기 위해 원래있는 태그에 가상요소를 만드는 것(가상선택자) */
+    /* 면 색과 반투명 테두리를 나눠서 주기 위함 */
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    position: absolute; left: 0; top: 0;
+    z-index: 100;
+}
+#wrap main .different .contents ol li:nth-child(4) {margin: 0;}
+#wrap main .different .contents ol li > * {
+    position: relative;  z-index: 200;
+    font-size: 1.56rem; font-weight: 600; line-height: 1.3;
+}
+#wrap main .different .contents ol li .num {
+    display: inline-block;
+    background-color: #5E91FF;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 67px 0 10px;
+    /* top: 67px; left: 90px; */
+}
+#wrap main .different .contents ol li h2 {}
+/* ================================================4행 자주묻는 질문 */
+#wrap main .question {}
+#wrap main .question .contents {padding-top: 231px;}
+#wrap main .question .contents .txt {margin-bottom: 54px;}
+#wrap main .question .contents .txt .sub_title {color: #5E91FF;}
+#wrap main .question .contents .txt h1 {color: #000;}
+#wrap main .question .contents .q_contents {
+    background-color: yellowgreen;
+}
+#wrap main .question .contents .q_contents a {
+    overflow: hidden; display: block;
+    background-color: #EEEEEE;
+    margin-bottom: 20px; padding: 20px;
+    border-radius: 10px;
+}
+#wrap main .question .contents .q_contents a:nth-child(3) {margin: 0;}
+#wrap main .question .contents .q_contents a .q_left {
+    background-color: yellow; float: left;
+}
+#wrap main .question .contents .q_contents a .q_left > * {
+    margin-right: 24px;
+}
+#wrap main .question .contents .q_contents a .q_left .category {
+    font-size: 1.25rem;
+    line-height: 1.5; letter-spacing: -0.02rem;
+}
+#wrap main .question .contents .q_contents a .q_left img {
+    position: relative; top: 4px;
+}
+#wrap main .question .contents .q_contents a .q_left em {
+    background-color: aqua;
+    font-size: 1.56rem; font-weight: 600;
+    line-height: 1.5; letter-spacing: -0.02rem;
+    margin: 0;
+}
+#wrap main .question .contents .q_contents a .q_down {float: right;}
+#wrap main .question .contents .q_contents a .q_down img {
+    position: relative; top: 7px;
+}
