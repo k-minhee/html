@@ -1,6 +1,7 @@
 body {background-color: #222;}
 main {
     width: 500px; margin: 97px auto 0;
+    padding-bottom: 100px;
     /* 부모의 너비값 고정이 되어있을 경우 그 자식, 자손 중 블록에 해당하는 모든 요소는 부모의 너비(w:100%)만큼 자동으로 크기를 인식하기 때문에 꼭 필요한 경우가 아니라면 너비를 입력하지 않아도 된다. */
 }
 main h1 {text-align: center; margin: 0 0 87px;}
@@ -58,9 +59,9 @@ main .tab_wrap #inFrm .forget_pw {
     display: block; margin: 14px 0 0;
     color: #fff; text-align: center;
 }
-/* SIGN UP 클릭 시 나오는 내용 스타일 */
-main .tab_wrap #upFrm {background-color: gray}
-main .tab_wrap #upFrm .username_wrap {background-color: crimson;}
+/* ===================================================================SIGN UP 클릭 시 나오는 내용 스타일 */
+main .tab_wrap #upFrm {}
+main .tab_wrap #upFrm .username_wrap {}
 main .tab_wrap #upFrm h2 {
     font-size: 1.25rem; color: #fff;
     letter-spacing: -0.02em; margin-bottom: 12px;
@@ -68,22 +69,26 @@ main .tab_wrap #upFrm h2 {
 main .tab_wrap #upFrm .username_wrap h2 {}
 main .tab_wrap #upFrm div {margin-bottom: 50px;}
 /* ==============================================================USER_NAME */
-main .tab_wrap #upFrm .username_wrap .name_box {background-color:darkturquoise;}
-main .tab_wrap #upFrm .username_wrap .name_box li {
-    background-color: chartreuse; 
-    display: inline-block; margin-bottom: 12px;
+main .tab_wrap #upFrm .username_wrap .name_box {
+    overflow: hidden;
+    margin-bottom: 12px;
 }
+main .tab_wrap #upFrm .username_wrap .name_box li {}
+main .tab_wrap #upFrm .username_wrap .name_box li:nth-child(1) {
+    background-color: #fff; width: 392px; height: 73px;
+    float: left; padding: 25px 30px; border-radius: 36.5px;
+}
+main .tab_wrap #upFrm .username_wrap .name_box li:nth-child(2) {float: right;}
 main .tab_wrap #upFrm .username_wrap .name_box li input::placeholder {color: #aaa;}
 main .tab_wrap #upFrm .username_wrap .name_box li input {
-    background-color: #fff;
-    border-radius: 36.5px; height: 73px;
-    padding: 25px 30px;
+    width: 100%;
 }
 main .tab_wrap #upFrm .username_wrap .name_box li input::placeholder {color: #aaa;}
 main .tab_wrap #upFrm .username_wrap .name_box li .check_btn {
-    background-color: #aaa; border-radius: 36.5px;
-    padding: 25px; height: 73px;
-    color: #fff; font-weight: 600;
+    border-radius: 36.5px;
+    color: #fff; font-weight: 500;
+    background-color: #aaa;
+    width:100px; height: 73px;
 }
 main .tab_wrap #upFrm .notice {
     width:435px; color: rgba(30, 215, 207, 0.8);
@@ -92,9 +97,9 @@ main .tab_wrap #upFrm .notice {
 }
 main .tab_wrap #upFrm .username_wrap .notice {}
 /* ==============================================================PW */
-main .tab_wrap #upFrm .pw_wrap {background-color: chocolate;}
+main .tab_wrap #upFrm .pw_wrap {}
 main .tab_wrap #upFrm .pw_wrap h2 {}
-main .tab_wrap #upFrm .pw_wrap .pw_box {background-color: darkmagenta;}
+main .tab_wrap #upFrm .pw_wrap .pw_box {}
 main .tab_wrap #upFrm .pw_wrap .pw_box li {}
 main .tab_wrap #upFrm .pw_wrap .pw_box li *::placeholder {color: #aaa;}
 main .tab_wrap #upFrm .pw_wrap .pw_box li input {
@@ -106,28 +111,56 @@ main .tab_wrap #upFrm .pw_wrap .notice {}
 /* ==============================================================MAIL */
 main .tab_wrap #upFrm .mail_wrap {}
 main .tab_wrap #upFrm .mail_wrap h2 {}
-main .tab_wrap #upFrm .mail_wrap .mail_box {background-color: crimson; margin-bottom: 12px;}
-main .tab_wrap #upFrm .mail_wrap .mail_box li {background-color: aqua; overflow: hidden;}
-main .tab_wrap #upFrm .mail_wrap .mail_box li input {
-    background-color: blueviolet; float: left;
-    padding: 25px 30px; border-radius: 36.5px;
+main .tab_wrap #upFrm .mail_wrap .mail_box {
+    margin-bottom: 12px; overflow: hidden;
+}
+main .tab_wrap #upFrm .mail_wrap .mail_box li {}
+main .tab_wrap #upFrm .mail_wrap .mail_box li:nth-child(1) {
+    background-color: #fff; float: left;
+    width: 229.5px; height: 73px; padding: 25px; border-radius: 36.5px;
 }
 main .tab_wrap #upFrm .mail_wrap .mail_box li:nth-child(2) {
-    font-size: 1.5rem; margin: 0 auto;
+    font-size: 1.5rem; float: left; margin: 20px 8px;  color: #fff;
+}
+main .tab_wrap #upFrm .mail_wrap .mail_box li:nth-child(3) {
+    background-color: #fff; float: right; border-radius: 36.5px;
+    width: 229.5px; height: 73px; padding: 25px;
+}
+main .tab_wrap #upFrm .mail_wrap .mail_box li input {
+    width: 100%;
 }
 main .tab_wrap #upFrm .mail_wrap .mail_box li select {
-    background-color: blueviolet;
-    padding: 25px 30px;border-radius: 36.5px;
+    position: relative; top: 3px;
+    width: 100%; 
+    background-image: url(../images/arrow_bottom.png);
+    background-repeat: no-repeat;
+    background-position: 158px;
 }
-main .tab_wrap #upFrm .mail_wrap .mail_box li select option {}
+main .tab_wrap #upFrm .mail_wrap .mail_box li select option {background-color: #fff;}
 main .tab_wrap #upFrm .mail_wrap .mail_box p {}
 /* ==============================================================PHONE NUMBER */
 main .tab_wrap #upFrm .phone_num_wrap {}
 main .tab_wrap #upFrm .phone_num_wrap h2 {}
-main .tab_wrap #upFrm .phone_num_wrap .phone_num_box {}
+main .tab_wrap #upFrm .phone_num_wrap .phone_num_box {
+    overflow: hidden;
+}
 main .tab_wrap #upFrm .phone_num_wrap .phone_num_box li {}
-main .tab_wrap #upFrm .phone_num_wrap .phone_num_box li input{}
-main .tab_wrap #upFrm .phone_num_wrap .phone_num_box li input .check_btn {}
+main .tab_wrap #upFrm .phone_num_wrap .phone_num_box li:nth-child(1) {
+    background-color: #fff; width: 392px; height: 73px;
+    float: left; padding: 25px 30px; border-radius: 36.5px;
+}
+main .tab_wrap #upFrm .phone_num_wrap .phone_num_box li:nth-child(2) {
+    float: right;
+}
+main .tab_wrap #upFrm .phone_num_wrap .phone_num_box li input{
+    width: 100%;
+}
+main .tab_wrap #upFrm .phone_num_wrap .phone_num_box li .check_btn {
+    border-radius: 36.5px;
+    color: #fff; font-weight: 500;
+    background-color: #aaa;
+    height: 73px; padding: 25px 34.5px;
+}
 /* ==============================================================SIGN UP BUTTON */
 main .tab_wrap #upFrm .btn {}
 main .tab_wrap #upFrm .btn .sign_up_btn {
