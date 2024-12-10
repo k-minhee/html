@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 파비콘 - 항상 파일연결 윗쪽에 -->
+    <link rel="shortcut icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <!-- 파일연결 -->
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/spotify.css" rel="stylesheet">
+    <style>
+        /* 선택자연습용(주로 input에서 많이 사용) */
+        input[name*=user] {background-color: ;} /* input 타입의 name 속성의 이름이 user_name일 때, 클래스를 안 줘도 사용할 수 있음 */
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/logo.png" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#">Sign In</a> <!-- 활성화 창(sign in) 클래스 -->
+            <a href="#" class="active">Sign Up</a>
+        </div>
+        <div class="tab_wrap">
+            <!-- SIGN IN 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="inFrm">
+                <ul>
+                    <li><input type="text" name="user_name" placeholder="Username" required></li>
+                    <li><input type="password" name="user_pw" placeholder="Password" required></li>
+                </ul>
+                <div class="stay_in">
+                    <input type="checkbox" name="login_stay" value="stay_on" id="stay_on">
+                    <label for="stay_on">stay signed in</label>
+                </div>
+                <p class="btn"><button type="submit" class="sign_in_btn">SGIN IN</button></p>
+                <a href="#" class="forget_pw">Forget Password?</a>
+            </form>
+            <!-- SIGN UP 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="upFrm">
+                <!-- ======================================================== USER NAME -->
+                <div class="username_wrap">
+                    <h2>User Name</h2>
+                    <ul class="name_box">
+                        <li><input type="text" name="user_name" placeholder="Enter username" required></li>
+                        <li><button type="button" class="check_btn">CHECK</button></li>
+                    </ul>
+                    <p class="notice">* 4~12 characters / lowercase letters (number combinations possible)</p>
+                </div>
+                <!-- ======================================================== PASSWORD -->
+                <div class="pw_wrap">
+                    <h2>Password</h2>
+                    <ul class="pw_box">
+                        <li><input type="password" name="pw" placeholder="Enter password" required></li>
+                        <li><input type="password" name="user_pw_check" placeholder="Check your password" required></li>
+                    </ul>
+                    <p class="notice">* 4~12 characters/combination of two or more of uppercase, lowercase, numbers, and special characters</p>
+                </div>
+                <!-- ============================================================ MAIL -->
+                <div class="mail_wrap">
+                    <h2>Email</h2>
+                    <ul class="mail_box">
+                        <li><input type="text" name="email" placeholder="Email" required></li>
+                        <li>@</li>
+                        <li>
+                            <select name="mail_address">
+                                <option>Select</option>
+                                <option value="enter_directly">Enter directly</option>
+                                <option value="naver">naver.com</option>
+                                <option value="gmail">gmail.com</option>
+                                <option value="kakao">kakao.com</option>
+                                <option value="daum">daum.net</option>
+                                <option value="hanmail">hanmail.net</option>
+                                <option value="nate">nate.com</option>
+                                <option value="hotmail">hotmail.com</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <p class="notice">* To further protect your account, please verify your email address by going to [My Information > Edit Member Information] after signing up.</p>
+                </div>
+                <!-- ======================================================== PHONE NUMBER -->
+                <div class="phone_num_wrap">
+                    <h2>Phone Number</h2>
+                    <ul class="phone_num_box">
+                        <li><input type="text" name="phone_num" placeholder="Enter your number" required></li>
+                        <li><button type="button" class="check_btn">GET</button></li>
+                    </ul>
+                </div>
+                <!-- ======================================================== SUBMIT BUTTON -->
+                <p class="btn"><button type="submit" class="sign_up_btn">SIGN UP</button></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+#wrap {}
+#wrap .content {
+    padding-top: 84px;
+    width: 500px; margin: 0 auto;
+}
+#wrap .content h1 {
+    font-size: 4.38rem; font-weight: 900;
+    letter-spacing: -0.02em;
+    margin-bottom: 25px;
+}
+#wrap .content p {
+    font-size: 1.25rem; letter-spacing: -0.02em;
+    margin-bottom: 57px;
+}
+#wrap .content #login {margin-bottom: 62px;}
+#wrap .content #login fieldset {}
+#wrap .content #login fieldset legend {}
+#wrap .content #login fieldset dl {}
+#wrap .content #login fieldset dl dt {
+    font-size: 1.88rem; font-weight: 600;
+    letter-spacing: -0.02em; margin-bottom: 18px;
+}
+#wrap .content #login fieldset dl dd {}
+#wrap .content #login fieldset dl dd input {
+    background-color: #fff; border: 1px solid #aaa;
+    padding: 15px; width: 100%;
+    border-radius: 10px;
+    margin-bottom: 38px;
+}
+#wrap .content #login fieldset dl dd button {
+    display: inline-block; width: 100%; padding: 15px 0;
+    border-radius: 10px; 
+}
+#wrap .content #login fieldset dl dd .login_btn {
+    margin-bottom: 18px; color: #fff;
+    background-color: #000; border: 1px solid #aaa;
+}
+#wrap .content #login fieldset dl dd .sign_google_btn {
+    background-color: #fff; border: 1px solid #aaa;
+}
+#wrap .content .sign_up {text-align: center;}
+#wrap .content .sign_up span {
+    color: #555;
+    letter-spacing: -0.02em;
+}
+#wrap .content .sign_up a {
+    font-weight: 600; letter-spacing: -0.02em;
+}
