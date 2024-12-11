@@ -9,7 +9,7 @@ main h1 a img {}
 main .join_law {
     background-color:#fff;
     height: 200px; overflow: auto; /* 넘친 부분 스크롤:auto */
-    padding: 10px; margin-bottom: 54px;
+    padding: 10px; margin-bottom: 54px;r
     border-radius: 10px;
 }
 main .join_law * {font-size: 0.75rem;}

@@ -1,0 +1,18 @@
+.book {margin: 206px auto; border-radius: 20px; overflow: hidden;} /* 해당 영역 안에서만 보이도록 자식/자손 때문에 부모의 속성이 안 보이면, overflow:hidden */
+.book tr {background-color: #F2F2F2;}
+.book tr:first-child {background-color: #FF0066;}
+.book tr:nth-child(3) {
+    background-color: #E8E8E8;
+    border: 2px solid #FF0066;
+}
+.book tr:nth-child(5) {background-color: #E8E8E8;}
+.book tr:nth-child(3) th,
+.book tr:nth-child(3) td {color: #FF0066;}
+.book tr th {}
+.book tr:first-child th {
+    color: #fff;
+    font-size: 1.13rem; font-weight: 700;
+    text-align: center; padding: 20px 0;
+}
+.book tr th:first-child {width: 250px; padding-left: 16px; font-weight: 500;}
+.book tr td {width: 100px; padding: 16px 0; text-align: center; font-weight: 500;}

@@ -1,0 +1,23 @@
+/* 페이지 로고 */
+header {}
+header h1 {}
+header h1 a {}
+header h1 a img {}
+/* =====================================main > title 부분 시작 */
+main {}
+main .title {}
+main .title h2 {}
+main .title p {}
+main .title .fast_login {}
+main .title .fast_login a {}
+main .title .fast_login a img {}
+/* ======================================main > form 시작 */
+main .title #joinFrm {}
+main .title #joinFrm dl {}
+main .title #joinFrm dl dt {}
+main .title #joinFrm dl dd {}
+main .title #joinFrm dl dd input {}
+main .title #joinFrm dl dd span {}
+main .title #joinFrm dl dd select {}
+main .title #joinFrm dl dd select option {}
+main .title #joinFrm dl dd .mail_check_btn {}
