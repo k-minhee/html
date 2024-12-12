@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 | 오늘의집</title>
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/login.css" rel="stylesheet">
 </head>
@@ -27,13 +27,16 @@
                 <dt>이메일</dt>
                 <dd>
                     <input type="email" name="user_email" placeholder="이메일" required>
-                    <span>@</span>
+                    <span class="mail_span">@</span>
                     <select name="mail_site">
+                        <option value="select">선택해주세요</option>
                         <option value="naver">네이버</option>
                         <option value="daum">다음</option>
                         <option value="nate">네이트</option>
                     </select>
-                    <button type="button" class="mail_check_btn">이메일 인증하기</button>
+                    <div class="btn">
+                        <button type="button" class="mail_check_btn">이메일 인증하기</button>
+                    </div>
                 </dd>
                 <dt>비밀번호</dt>
                 <dd>
@@ -47,49 +50,49 @@
                 <dt>닉네임</dt>
                 <dd>
                     <span>다른 유저와 겹치지 않도록 입력해주세요.(2-20자)</span>
-                    <input type="text" name="user_nickname" placeholder="별명 (2~20자)" maxlength="20" required>
+                    <input type="text" name="user_nickname" class="user_nickname" placeholder="별명 (2~20자)" maxlength="20" required>
                 </dd>
                 <dt>약관동의</dt>
-                <dd>
-                    <label>
-                        <input type="checkbox" name="join_law" value="all_y_law">
-                        <em>전체동의</em>
-                        <span>선택항목에 대한 동의 포함</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="join_law" value="age_law" required>
-                        <span>만 14세 이상입니다</span>
-                        <em>(필수)</em>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="join_law" value="use_law" required>
-                        <span>이용약관</span>
-                        <em>(필수)</em>
+                <dd class="law">
+                    <div class="all">
+                        <input type="checkbox" name="join_law" value="all_y_law" id="all_y_law">
+                        <label for="all_y_law">전체동의</label>
+                        <span class="all_y_txt">선택항목에 대한 동의 포함</span>
+                    </div>
+                    <div class="law_age">
+                        <input type="checkbox" name="join_law" value="age_law" id="age_law" required>
+                        <label for="age_law">만 14세 이상입니다</label>
+                        <span>(필수)</span>
+                    </div>
+                    <div class="law_use">
+                        <input type="checkbox" name="join_law" value="use_law" id="use_law" required>
+                        <label for="use_law">이용약관</label>
+                        <span>(필수)</span>
                         <a href="#"><img src="./images/arrow_forward_ios.png" alt="이용약관 바로가기"></a>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="join_law" value="consent_law" required>
-                        <span>개인정보수집 및 이용동의</span>
-                        <em>(필수)</em>
-                        <a href="#"><img src="./images/arrow_forward_ios.png" alt="개인정보수집 및 이용약관 바로가기"></a>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="join_law" value="marketing_law">
-                        <span>개인정보 마케팅 활용 동의</span>
-                        <em>(선택)</em>
-                        <a href="#"><img src="./images/arrow_forward_ios.png" alt="개인정보 마케팅 활용 동의 바로가기"></a>
-                    </label>
-                    <label>
-                        <input type="checkbox" name="join_law" value="noti_law">
-                        <span>이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신</span>
-                        <em>(선택)</em>
-                    </label>
+                    </div>
+                    <div class="law_consent">
+                        <input type="checkbox" name="join_law" value="consent_law" id="consent_law" required>
+                        <label for="consent_law">개인정보수집 및 이용동의</label>
+                        <span>(필수)</span>
+                        <a href="#"><img src="./images/arrow_forward_ios.png" alt="이용약관 바로가기"></a>
+                    </div>
+                    <div class="law_marketing">
+                        <input type="checkbox" name="join_law" value="marketing_law" id="marketing_law" required>
+                        <label for="marketing_law">개인정보 마케팅 활용 동의</label>
+                        <span>(선택)</span>
+                        <a href="#"><img src="./images/arrow_forward_ios.png" alt="마케팅활용 약관 바로가기"></a>
+                    </div>
+                    <div class="law_notice">
+                        <input type="checkbox" name="join_law" value="noti_law" id="noti_law" required>
+                        <label for="noti_law">이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신</label>
+                        <span>(선택)</span>
+                    </div>
                 </dd>
             </dl>
-            <div class="btn">
-                <button type="submit" class="join_btn">회원가입하기</button>
-            </div>
         </form>
+        <div class="btn">
+            <button type="submit" class="join_btn">회원가입하기</button>
+        </div>
         <p>이미 아이디가 있으신가요? <a href="#">로그인</a></p>
     </main>
 </body>

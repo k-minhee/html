@@ -1,23 +1,122 @@
 /* 페이지 로고 */
 header {}
-header h1 {}
+header h1 {padding: 21px 0 0 80px;}
 header h1 a {}
 header h1 a img {}
 /* =====================================main > title 부분 시작 */
-main {}
-main .title {}
-main .title h2 {}
-main .title p {}
-main .title .fast_login {}
+main {width: 360px; margin: 25px auto;}
+main .title {padding-bottom: 30px; margin-bottom: 20px;}
+main .title h2 {
+    font-size: 1.25rem; font-weight: 600; letter-spacing: -0.02em; 
+    margin-bottom: 14px;}
+main .title p {
+    text-align: center;
+    font-size: 0.88rem; color: #777; letter-spacing: -0.02em;
+    margin-bottom: 14px;
+}
+main .title .fast_login {text-align: center;}
 main .title .fast_login a {}
+main .title .fast_login a:nth-child(2) {margin: 0 20px ;}
 main .title .fast_login a img {}
 /* ======================================main > form 시작 */
-main .title #joinFrm {}
-main .title #joinFrm dl {}
-main .title #joinFrm dl dt {}
-main .title #joinFrm dl dd {}
-main .title #joinFrm dl dd input {}
-main .title #joinFrm dl dd span {}
-main .title #joinFrm dl dd select {}
-main .title #joinFrm dl dd select option {}
-main .title #joinFrm dl dd .mail_check_btn {}
+main #joinFrm {}
+/* ======================================공통디자인 */
+main #joinFrm dl {}
+main #joinFrm dl dt {
+    font-size: 1.06rem; font-weight: 500;
+    margin-bottom: 10px;
+}
+main #joinFrm dl dd {margin-bottom: 20px;}
+main #joinFrm dl dd input::placeholder {color: #bbb;}
+main #joinFrm dl dd input[name^=user],
+main #joinFrm dl dd select {
+    background-color: #fff; border: 1px solid #ddd; border-radius: 3px;
+    width: 100%; padding: 10px;
+}
+/* ===============================================================개별디자인 */
+/* dt 밑 안내문구 부분(영문, 숫자~, 다른 유저와~) */
+main #joinFrm dl dd > span {
+    font-size: 0.88rem; letter-spacing: -0.02em; color: #777;
+    display: inline-block; margin-bottom: 10px;
+}
+/* mail '@' 표시 부분 */
+main #joinFrm dl dd .mail_span{
+    text-align: center; margin: 0 3.8px;
+    letter-spacing: -0.02em;
+    position: relative; top: 12px;
+}
+main #joinFrm dl dd input[name$=mail] {
+    float: left;
+    width: calc(100% - 190px);
+}
+main #joinFrm dl dd input[name$=pw] {}
+main #joinFrm dl dd input[name$=pw_check] {}
+main #joinFrm dl dd input[name$=nickname] {}
+main #joinFrm dl dd select {
+    float: right; position: relative; top: 2px;
+    width: calc(100% - 190px); margin-bottom: 10px;
+    background-image: url(../images/arrow_drop_down.png);
+    position: relative; top: 2px;
+    background-repeat: no-repeat;
+    background-position: 140px center;
+}
+main #joinFrm dl dd select[name=mail_site] option {}
+main #joinFrm dl dd .btn {}
+main #joinFrm dl dd .btn .mail_check_btn {
+    background-color: #f5f5f5;
+    display: inline-block; width: 100%;
+    text-align: center;
+    padding: 10px 0; border-radius: 3px; border: 1px solid #ddd;
+    color: #777; font-weight: 600;
+}
+/* =======================================약관동의 부분 */
+/* 전체동의 체크박스 */
+main #joinFrm dl .law {
+    padding: 10px; border: 1px solid #ddd; border-radius: 3px;
+}
+main #joinFrm dl dd .all {
+    padding-bottom: 10px; margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+main #joinFrm dl dd .all #all_y_law {margin-bottom: 10px;}
+main #joinFrm dl dd .all #all_y_law:checked+label {
+    background: url(../images/check_box_n.png) no-repeat center left;
+}
+main #joinFrm dl dd .all label {
+    font-weight: 600; background: url(../images/check_box_y.png) no-repeat left center;
+    padding-left: 34px;
+}
+main #joinFrm dl dd .all .all_y_txt {font-size: 0.88rem; color: #777;}
+/* 전체동의 하단 약관 체크박스들 모음 */
+main #joinFrm dl dd div[class^=law] {padding: 4px 0; margin-bottom: 10px;}
+main #joinFrm dl dd div[class^=law]:last-child {padding: 4px 0; margin:0;}
+main #joinFrm dl dd div[class^=law] label {
+    background: url(../images/check_box_n.png) no-repeat center left;
+    padding: 4px 0 4px 30px;
+}
+main #joinFrm dl dd div[class^=law] [id$=law]:checked+label {
+    background: url(../images/check_box_y.png) no-repeat center left;
+}
+main #joinFrm dl dd div[class^=law] label,
+main #joinFrm dl dd div[class^=law] span {
+    font-size: 0.81rem;
+}
+main #joinFrm dl dd div span {color: #3292FF;}
+main #joinFrm dl dd .law_marketing span,
+main #joinFrm dl dd .law_notice span {color: #777;}
+main #joinFrm dl dd div[class^=law] a img {
+    float: right;
+}
+/* =======================================SUBMIT button 시작 */
+main .btn {text-align: center;margin-bottom: 22px;}
+main .btn .join_btn {
+    background-color: #3292FF; width: 100%;
+    border-radius: 3px; 
+    padding: 15px 10px;
+    color: #fff;
+}
+main > p {
+    text-align: center;
+    font-size: 0.88rem; padding-bottom: 100px;
+}
+main > p a {font-weight: 600; border-bottom: 1px solid #000;}
