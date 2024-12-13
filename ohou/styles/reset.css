@@ -3,7 +3,7 @@ p,div,dl,dt,dd,ul,ol,li,video,blockquote,hr,a,address,
 span,em,img,strong,sub,sup,del,s,mark,code, header, main, nav, footer, article, section, aside,
 form, fieldset, legend, input, textarea, label, select, option, button {
     line-height:1.0; font-size:1.0em; font-weight: normal;
-    margin:0; padding:0; font-style: normal;
+    margin:0; padding:0; font-style: normal; letter-spacing: -0.02em;
     box-sizing: border-box;
     font-family: "Pretendard Variable", Pretendard, sans-serif;
 }
