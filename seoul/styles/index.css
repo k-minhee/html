@@ -116,25 +116,44 @@ main > * .title {}
 main > * .title h1 {}
 main > * .title h1 .more_view {}
 /* ================================================2. 주요 서비스 */
-main .service_container {}
-main .service_container .title {}
-main .service_container .title h1 {}
+main .service_container {width: 1152px; margin: 0 auto;}
+main .service_container .title {
+    display:flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    background-color: lime;
+}
+main .service_container .title h1 {
+    font-size: 1.43rem; font-weight: 500;
+}
 main .service_container .title h1 .more_view {}
-main .service_container .contents {}
-main .service_container .contents a {}
-main .service_container .contents a span {}
-main .service_container .contents a em {}
+main .service_container .contents {
+    background-color: aqua;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+main .service_container .contents a {
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+main .service_container .contents a span {
+    background-color: yellow;
+    width: 60px; height: 60px;
+    background-image: url(../images/service.png);
+    margin-bottom: 15px;
+}
+main .service_container .contents a em {font-size: 0.81rem; letter-spacing: -0.02em;}
 main .service_container .contents a:nth-child(1) span {}
-main .service_container .contents a:nth-child(2) span {}
-main .service_container .contents a:nth-child(3) span {}
-main .service_container .contents a:nth-child(4) span {}
-main .service_container .contents a:nth-child(5) span {}
-main .service_container .contents a:nth-child(6) span {}
-main .service_container .contents a:nth-child(7) span {}
-main .service_container .contents a:nth-child(8) span {}
-main .service_container .contents a:nth-child(9) span {}
-main .service_container .contents a:nth-child(10) span {}
-main .service_container .contents a:nth-child(11) span {}
+main .service_container .contents a:nth-child(2) span {background-position-x: -60px;}
+main .service_container .contents a:nth-child(3) span {background-position-x: -120px;}
+main .service_container .contents a:nth-child(4) span {background-position-x: -180px;}
+main .service_container .contents a:nth-child(5) span {background-position-x: -240px;}
+main .service_container .contents a:nth-child(6) span {background-position-x: -300px;}
+main .service_container .contents a:nth-child(7) span {background-position-x: -360px;}
+main .service_container .contents a:nth-child(8) span {background-position-x: -420px;}
+main .service_container .contents a:nth-child(9) span {background-position-x: -480px;}
+main .service_container .contents a:nth-child(10) span {background-position-x: -540px;}
+main .service_container .contents a:nth-child(11) span {background-position-x: -600px;}
 /* ================================================main 3. 신청,행사,서비스 */
 /* ================================================main 3-1. 이벤트신청 */
 /* ================================================main 3-2. 이달행사축제 */
