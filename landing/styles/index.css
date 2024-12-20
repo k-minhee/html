@@ -56,7 +56,7 @@
 }
 #wrap .bg1 .gradient .contents > * {}
 #wrap .bg1 .gradient .contents {
-    height: 150vh; /* 화면 높이만큼주기 > 자식한테 줘야, bg1과 gradient에 높이를 안 줘도 됨 */
+    height: 100vh; /* 화면 높이만큼주기 > 자식한테 줘야, bg1과 gradient에 높이를 안 줘도 됨 */
     display: flex; flex-flow: column nowrap;
     justify-content: center; align-items: center;
 }
@@ -121,7 +121,7 @@
 /* =====================3행 동영상 */
 #wrap .bg3 {
     background-image: url(../images/video_bg.png);
-    padding: 200px 0;
+    padding: 200px 335px;
 }
 #wrap .bg3 .contents {
     display: flex; flex-flow: column nowrap;
@@ -136,7 +136,7 @@
 #wrap .bg4,
 #wrap .bg6 {
     background-image: url(../images/50_bg.png);
-    padding: 335px 200px;
+    padding: 200px 335px;
 }
 #wrap .bg4 .contents,
 #wrap .bg6 .contents {}
@@ -148,19 +148,69 @@
 }
 #wrap .bg4 .contents h2 span,
 #wrap .bg6 .contents h2 span {
+    display: inline-block;
     background-color: #fff; color: #050505;
-    font-weight: 700;
+    font-weight: 700; padding: 0 2px 5px 2px;
 }
 #wrap .bg4 .contents h2+p,
 #wrap .bg6 .contents h2+p {
     font-size: 2.13rem; font-weight: 700; line-height: 1.5;
-    color: #fff; margin: 80px 0;
+    color: #fff; margin: 81px 0;
 }
 #wrap .bg4 .contents .img,
 #wrap .bg6 .contents .img {}
 #wrap .bg4 .contents .img img,
 #wrap .bg6 .contents .img img {width: 100%;}
 /* =====================5행 빙하 인류재앙3 */
+#wrap .bg5 {background-color: #f5f5f5; padding: 200px 0;}
+#wrap .bg5 .contents {
+    display: flex; flex-flow: column nowrap; text-align: center;
+}
+#wrap .bg5 .contents h3 {
+    padding-top: 48px; margin-bottom: 11px;
+    font-size: 3.69rem; font-weight:700; line-height: 1.2;
+    color: #fff;
+}
+#wrap .bg5 .contents > p {
+    font-size: 1.25rem; line-height: 1.7; margin: 55px 0;
+}
+#wrap .bg5 .contents ul {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+#wrap .bg5 .contents ul li {
+    width: calc((100% - (20px * 2)) / 3);
+    background-color: aquamarine;
+}
+#wrap .bg5 .contents ul li:nth-child(2) {margin: 0 20px;}
+#wrap .bg5 .contents ul li .title {
+    height: 320px; background-size: cover; background-position: center 65%;
+    position: relative;
+}
+#wrap .bg5 .contents ul li:nth-child(1) .title {
+    background-image: url(../images/28.png);
+}
+#wrap .bg5 .contents ul li:nth-child(2) .title {
+    background-image: url(../images/27.png);
+}
+#wrap .bg5 .contents ul li:nth-child(3) .title {
+    background-image: url(../images/wwf.jpg);
+}
+#wrap .bg5 .contents ul li .title::after {
+    content: ''; display: block; height: 100%; width: 100%;
+    position: absolute; top: 0; left: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 19%, rgba(0,0,0,0.0) 60%);
+    z-index: 1;
+}
+#wrap .bg5 .contents ul li .title h3,
+#wrap .bg5 .contents ul li .title p {position: relative; z-index: 10;}
+#wrap .bg5 .contents ul li .title p {
+    font-size: 1.25rem; line-height: 1.7; color: #fff;
+}
+#wrap .bg5 .contents ul li .content {
+    background-color: #fff;
+    font-size: 1.25rem; line-height: 1.7;
+    padding: 20px; height: 250px;
+}
 /* =====================7행 WWF소개 */
 /* =====================8행 다양한 활동 */
 /* =====================9행 감사선물 */
