@@ -9,14 +9,17 @@
     <!-- 외부 스타일시트 연결 -->
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
+    <link href="./styles/responsive.css" rel="stylesheet">
+    <!-- 외부스타일시트 연결 순서 1. reset / 2. 개별 디자인css / 3. 반응형css -->
 </head>
 <body>
     <div id="wrap">
+        <!-- 1god -->
         <div class="bg1 container">
             <div class="gradient">
                 <div class="contents">
                     <h1><a href="#"><img src="./images/logo.jpg" alt="WWF"></a></h1>
-                    <h1>생존의 벼랑 끝에 서 있는<br>
+                    <h1 class="main_title">생존의 벼랑 끝에 서 있는<br>
                         <span>북극곰을 지켜주세요</span></h1>
                     <a href="#" class="sponsor_btn">북극곰 후원하기<img src="./images/btn_right_arrow.png" alt=""></a>
                     <a href="#" class="sponsor_q_btn">
@@ -27,6 +30,67 @@
                 </div>
             </div>
         </div>
+        <!-- 2행 퀴즈 -->
+        <div class="bg2 container">
+            <div class="contents">
+                <div class="quiz_contents">
+                    <h2>Quiz</h2>
+                    <p>20년 사이 북극 빙하 면적은 몇 % 감소했을까요?</p>
+                    <form action="#" method="get">
+                        <label>
+                            <input type="radio" name="quiz_list" value="wrong30" id="wrong30" checked>
+                            <span>30%</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="quiz_list" value="wrong40" id="wrong40">
+                            <span>40%</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="quiz_list" value="wrong50" id="wrong50">
+                            <span>50%</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="quiz_list" value="correct60" id="wrong60">
+                            <span>60%</span>
+                        </label>
+                        <button type="button" class="answer_btn">정답 확인 하기</button>
+                    </form>
+                </div>
+                <div class="quiz_status">
+                    <img src="./images/quiz.png" alt="퀴즈 참여 현황, 38387명 참여">
+                    <span>*퀴즈 참여 현황은 매주 업데이트 됩니다</span>
+                </div>
+            </div>
+        </div>
+        <!-- 3행 동영상 -->
+         <div class="bg3 container">
+            <div class="contents">
+                <h2>죽은 어미 곁을 떠나지 못하는<br>새끼 북극곰의 이야기</h2>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/J6j7j2pxRII?autoplay=1&mute=1&loop=1&playlist=J6j7j2pxRII&control=0" title="북극곰 타라 캠페인" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <a href="#" class="sponsor_btn">북극곰 후원하기<img src="./images/btn_right_arrow.png" alt=""></a>
+            </div>
+         </div>
+         <!-- 4행 빙하면적 50% 감소 -->
+         <div class="bg4" container>
+            <div class="contents">
+                <h2>최근 20년 사이 북극의 빙하 면적은<br><span>50% 감소</span>하였습니다</h2>
+                <p>북극은 북극곰의 주 서식지이자 사냥터지만<br>이 순간에도 녹아 내리는 빙하로 인해 북극곰은 갈 곳을 잃었습니다</p>
+                <p class="img">
+                    <img src=".//images/50.png" alt="">
+                </p>
+            </div>
+         </div>
+         <!-- 6행 빙하면적 50% 감소 -->
+         <div class="bg6" container>
+            <div class="contents">
+                <h2>북극곰의 위기는<br><span>지구 전체의 위기</span>입니다</h2>
+                <p>먹이사슬의 최상위 포식자인 북극곰이 멸종된다면<br>
+                    생태계의 불균형으로 인해 지구 전체의 위기로 이어집니다</p>
+                <p class="img">
+                    <img src="./images/crisis_img.jpg" alt="">
+                </p>
+            </div>
+         </div>
     </div>
 </body>
 </html>

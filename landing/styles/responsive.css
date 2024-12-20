@@ -1,0 +1,87 @@
+/* 미디어쿼리 조건 작성위치 */
+@media screen and (max-width:1250px) {
+    /* ================================공통 선택자 + 1행 반응형디자인(Tablet) */
+    #wrap .container > * {padding: 0 80px;} /* container의 자식은 어차피 1개 뿐이므로 */
+    #wrap .container .main_title {
+        font-size: 3.13rem;
+    }#wrap .container h2 {
+        font-size: 2.5rem;
+    }
+    #wrap .container .sponsor_btn {
+        font-size: 1.38rem; padding: 15px 0; width: 270px;
+        text-align: center; line-height: 1.5;
+    }
+    #wrap .container .sponsor_btn img {width: 22px;}
+    #wrap .container .sponsor_q_btn {
+        font-size: 1.38rem;
+        display: inline-block;
+        padding: 10px 0; width: 350px;
+        text-align: center; line-height: 1.5;
+    }
+    #wrap .container .sponsor_q_btn img {width: 20px;}
+    #wrap .container .sponsor_q_btn img:first-child {display: none;}
+    /* ================================2행 반응형디자인(Tablet) */
+    #wrap .bg2 .contents .quiz_contents h2 {padding: 0; text-align: center;}
+    #wrap .bg2 .contents .quiz_contents form  .answer_btn {width: 230px;}
+    #wrap .bg2 .contents .quiz_status {padding-top: 95px;}
+    #wrap .bg2 .contents .quiz_status img {width: 310px; margin-bottom: 12px;}
+    #wrap .bg2 .contents .quiz_status span {font-size: 1rem;}
+    /* ================================3행 반응형디자인(Tablet) */
+    #wrap .bg3 .contents iframe {}
+    #wrap .bg3 .contents .sponsor_btn {
+        font-size: 1.38rem;
+        display: inline-block;
+        padding: 10px 0; width: 270px;
+        text-align: center; line-height: 1.5;
+    }
+    /* ================================4행 반응형디자인(Tablet) */
+    /* ================================5행 반응형디자인(Tablet) */
+    /* ================================6행 반응형디자인(Tablet) */
+    /* ================================7행 반응형디자인(Tablet) */
+    /* ================================8행 반응형디자인(Tablet) */
+    /* ================================9행 반응형디자인(Tablet) */
+    /* ================================10행 반응형디자인(Tablet) */
+} /* 1250 end */
+@media screen and (max-width:900px) {
+    /* ================================2행 반응형디자인(769~900) */
+    #wrap .bg2 {padding: 80px 0;}
+    #wrap .bg2 .contents {flex-flow: column nowrap; align-items: center;}
+    #wrap .bg2 .contents .quiz_contents p {margin-bottom: 0;}
+    #wrap .bg2 .contents .quiz_contents p,
+    #wrap .bg2 .contents .quiz_contents form  label input[name^=quiz]+span {
+        font-size:1rem; line-height: 1.7; letter-spacing:-0.02em;
+        height: 30px;
+    }
+    #wrap .bg2 .contents .quiz_contents form  label input[name^=quiz]+span {
+        background-position-y: 2px;
+    }
+    #wrap .bg2 .contents .quiz_contents form .answer_btn {
+        display: block; margin: 20px auto;
+    }
+    #wrap .bg2 .contents .quiz_status {padding-top: 40px;}
+    #wrap .bg2 .contents .quiz_status span {
+        font-size: 0.81rem; line-height: 1.7; letter-spacing:-0.02em;
+        text-align: center;
+    }
+} /* 769 ~ 900 end */
+@media screen and (max-width:768px) {
+    /* ================================공통 선택자 + 1행 반응형디자인(Mobile) */
+    #wrap .container > * {padding: 0 15px;}
+    #wrap .container .main_title {font-size: 1.88rem;}
+    #wrap .container h2 {font-size: 1.5rem;}
+    #wrap .bg1 .gradient .contents > * {margin-bottom: 60px;}
+    #wrap .bg1 .gradient .contents h1:nth-child(1) {width: 40px;}
+    #wrap .bg1 .gradient .contents .sponsor_q_btn {align-self: center;}
+    /* ================================2행 반응형디자인(Mobile) */
+    /* ================================3행 반응형디자인(Mobile) */
+    #wrap .bg3 {padding: 70px 0;}
+    #wrap .bg3 .contents > * {margin-bottom: 40px;}
+    #wrap .bg3 .contents iframe {height: 300px;}
+    /* ================================4행 반응형디자인(Mobile) */
+    /* ================================5행 반응형디자인(Mobile) */
+    /* ================================6행 반응형디자인(Mobile) */
+    /* ================================7행 반응형디자인(Mobile) */
+    /* ================================8행 반응형디자인(Mobile) */
+    /* ================================9행 반응형디자인(Mobile) */
+    /* ================================10행 반응형디자인(Mobile) */
+} /* 320 ~ 768 end */
