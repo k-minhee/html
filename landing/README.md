@@ -17,7 +17,7 @@ line-height: 1.2;
 ### 후원질문버튼(d) 26
 font-size: 1.63rem; line-height: 1.2;
 ### 내용 강조(d) 34
-font-size: 2.13rem; font-weight: 700; line-height: 1.5;
+font-size: 2.13rem; line-height: 1.5;
 ### 후원버튼(d) 34
 font-size: 2.13rem; font-weight:700;
 line-height: 1.2;
@@ -40,8 +40,8 @@ font-size: 1.38rem; font-weight: 700;
 line-height: 1.5;
 ### 내용 강조(t) 22 regular
 font-size: 1.38rem; line-height: 1.5; letter-spacing:-0,02em;
-### 내용(d) 20
-line-height: 1.7;
+### 내용(d) 16
+font-size: 1rem; line-height: 1.7;
 <!-- ================================mobile -->
 ## 스타일가이드 글꼴 정보
 ### 대제목m 32
@@ -51,7 +51,7 @@ line-height: 1.3; letter-spacing:-0.02em;
 font-size: 1.5rem; font-weight:600;
 line-height: 1.3; letter-spacing:-0.02em;
 ### 내용 강조(m) 16 bold
-font-weight: 600; line-height: 1.7;
+font-size: 1rem; font-weight: 600; line-height: 1.7;
 ### 내용(m) 16
 line-height: 1.7; letter-spacing:-0.02em;
 ### 내용(m) 13

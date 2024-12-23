@@ -1,31 +1,24 @@
 /* 미디어쿼리 조건 작성위치 */
 @media screen and (max-width:1250px) {
     /* ================================공통 선택자 + 1행 반응형디자인(Tablet) */
-    #wrap .container > * {padding: 0 80px;} /* container의 자식은 어차피 1개 뿐이므로 */
-    #wrap .container .main_title {
-        font-size: 3.13rem;
-    }#wrap .container h2 {
-        font-size: 2.5rem;
-    }
+    #wrap .container > * {padding:0 80px;}
+    #wrap .container .main_title {font-size:3.13rem;}
+    #wrap .container h2 {font-size:2.5rem;}
     #wrap .container .sponsor_btn {
-        font-size: 1.38rem; padding: 15px 0; width: 270px;
-        text-align: center; line-height: 1.5;
+        font-size:1.38rem;
+        width:270px; padding:15px 0;
+        display:flex; align-items:center; justify-content:center;
     }
-    #wrap .container .sponsor_btn img {width: 22px;}
-    #wrap .container .sponsor_q_btn {
-        font-size: 1.38rem;
-        display: inline-block;
-        padding: 10px 0; width: 350px;
-        text-align: center; line-height: 1.5;
-    }
-    #wrap .container .sponsor_q_btn img {width: 20px;}
-    #wrap .container .sponsor_q_btn img:first-child {display: none;}
+    #wrap .container .sponsor_q_btn {font-size:1.25rem;}
+    #wrap .container .sponsor_q_btn img:first-child {display:none;}
     /* ================================2행 반응형디자인(Tablet) */
-    #wrap .bg2 .contents .quiz_contents h2 {padding: 0; text-align: center;}
-    #wrap .bg2 .contents .quiz_contents form  .answer_btn {width: 230px;}
-    #wrap .bg2 .contents .quiz_status {padding-top: 95px;}
-    #wrap .bg2 .contents .quiz_status img {width: 310px; margin-bottom: 12px;}
-    #wrap .bg2 .contents .quiz_status span {font-size: 1rem;}
+    #wrap .bg2 .contents .quiz_contents h2 {
+        font-size:2.50rem;
+        margin:0 0 56px 222px;
+    }
+    #wrap .bg2 .contents .quiz_contents form .answer_btn {width:300px;}
+    #wrap .bg2 .contents .quiz_status {text-align:right;}
+    #wrap .bg2 .contents .quiz_status img {width:316px;}
     /* ================================3행 반응형디자인(Tablet) */
     #wrap .bg3 .contents iframe {}
     #wrap .bg3 .contents .sponsor_btn {
@@ -37,70 +30,119 @@
     /* ================================4행 반응형디자인(Tablet) */
     /* ================================6행 반응형디자인(Tablet) */
     #wrap .bg4 .contents h2,
-    #wrap .bg6 .contents h2 {font-size: 2.5rem;}
+    #wrap .bg6 .contents h2 {font-size:2.50rem;}
     #wrap .bg4 .contents h2+p,
-    #wrap .bg6 .contents h2+p {font-size: 1.38rem; margin: 40px 0;}
+    #wrap .bg6 .contents h2+p {font-weight:400; margin:40px 0; font-size:1.38rem;}
     /* ================================5행 반응형디자인(Tablet) */
+    #wrap .bg5 h2 {font-size: 2.5rem; font-weight:500;}
+    #wrap .bg5 .contents > p {font-size: 1rem;  margin: 40px 0;}
+    #wrap .bg5 .contents ul li .content {height: auto; font-size: 1rem;}
     /* ================================7행 반응형디자인(Tablet) */
+    #wrap .bg7 .contents p {font-size: 1.38rem;}
+    #wrap .bg7 .contents p:nth-child(2) {margin: 40px 0;}
     /* ================================8행 반응형디자인(Tablet) */
+    #wrap .bg8 .contents .activity {flex-flow: column nowrap;}
+    #wrap .bg8 .contents .activity li {
+        width: 100%; flex-flow: column nowrap;
+    }
+    #wrap .bg8 .contents .activity li:last-child {margin-top: 22px; padding-top: 189px;}
+    #wrap .bg8 .contents .activity li .list1,
+    #wrap .bg8 .contents .activity li .list2 {
+        height: auto; padding-top: 189px;
+    }
+    #wrap .bg8 .contents .activity li .text {
+        width: 100%; position: relative; bottom: 0;
+    }
+    #wrap .bg8 .contents .activity li .list1 .text,
+    #wrap .bg8 .contents .activity li .list2 .text {width: 100%; position: relative; bottom: 0;}
+    #wrap .bg8 .contents .activity li .text h3 {font-size: 1.38rem; margin-bottom: 10px;}
+    #wrap .bg8 .contents .activity li .text p {font-size: 1rem;}
     /* ================================9행 반응형디자인(Tablet) */
+    #wrap .bg9 .contents .title {margin-bottom: 40px;}
+    #wrap .bg9 .contents .products_list {flex-flow: row wrap;}
+    #wrap .bg9 .contents .products_list li:nth-child(1),
+    #wrap .bg9 .contents .products_list li:nth-child(2) {
+        width : calc((100% - 40px) / 2); margin-bottom: 22px;
+    }
+    #wrap .bg9 .contents .products_list li:nth-child(3) {width: 100%;}
+    #wrap .bg9 .contents .benefit {font-size: 1rem; margin-top: 40px;}
     /* ================================10행 반응형디자인(Tablet) */
+    #wrap .bg10 .contents h3 {font-size: 1.38rem;}
+    #wrap .bg10 .contents ul li {font-size: 1rem;}
 } /* 1250 end */
 @media screen and (max-width:900px) {
-    /* ================================2행 반응형디자인(769~900) */
-    #wrap .bg2 {padding: 200px 80px;}
-    #wrap .bg2 .contents {flex-flow: column nowrap; align-items: center;}
-    #wrap .bg2 .contents .quiz_contents p {margin-bottom: 0;}
-    #wrap .bg2 .contents .quiz_contents p,
-    #wrap .bg2 .contents .quiz_contents form  label input[name^=quiz]+span {
-        font-size:1rem; line-height: 1.7; letter-spacing:-0.02em;
-        height: 30px;
-    }
-    #wrap .bg2 .contents .quiz_contents form  label input[name^=quiz]+span {
-        background-position-y: 2px;
-    }
-    #wrap .bg2 .contents .quiz_contents form .answer_btn {
-        display: block; margin: 20px auto;
-    }
-    #wrap .bg2 .contents .quiz_status {padding-top: 40px;}
-    #wrap .bg2 .contents .quiz_status span {
-        font-size: 0.81rem; line-height: 1.7; letter-spacing:-0.02em;
-        text-align: center;
-    }
+    /* =======================2행 반응형디자인(769~900) */
+    #wrap .bg2 .contents {flex-flow:column nowrap;align-items:center;}
+    #wrap .bg2 .contents .quiz_contents {margin-bottom:50px;}
+    #wrap .bg2 .contents .quiz_contents h2 {margin-left:0;}
+}/* 769~900 end */
     /* ================================4행 반응형디자인(Mobile) */
     /* ================================6행 반응형디자인(Mobile) */
     #wrap .bg4,
-    #wrap .bg6 {padding: 60px 15px;}
+    #wrap .bg6 {padding: 60px 80px;}
     #wrap .bg4 .contents h2,
     #wrap .bg6 .contents h2 {font-size: 1.5rem;}
     #wrap .bg4 .contents h2+p,
     #wrap .bg6 .contents h2+p {font-size: 0.81rem; margin: 24px 0;}
-    }
-} /* 769 ~ 900 end */
+ /* 769 ~ 900 end */
 @media screen and (max-width:768px) {
-    /* ================================공통 선택자 + 1행 반응형디자인(Mobile) */
-    #wrap .container > * {padding: 0 15px;}
-    #wrap .container .main_title {font-size: 1.88rem;}
-    #wrap .container h2 {font-size: 1.5rem;}
-    #wrap .bg1 .gradient .contents > * {margin-bottom: 60px;}
-    #wrap .bg1 .gradient .contents h1:nth-child(1) {width: 40px;}
-    #wrap .bg1 .gradient .contents .sponsor_q_btn {align-self: center;}
-    /* ================================2행 반응형디자인(Mobile) */
-    /* ================================3행 반응형디자인(Mobile) */
-    #wrap .bg3 {padding: 70px 15px;}
-    #wrap .bg3 .contents > * {margin-bottom: 40px;}
-    #wrap .bg3 .contents iframe {height: 300px;}
-    /* ================================4행 반응형디자인(Mobile) */
-    /* ================================6행 반응형디자인(Mobile) */
+    /* =======================공통 선택자 + 1행 반응형디자인(mobile) */
+    #wrap .container > * {padding:0 15px;}
+    #wrap .container h2 {font-size:1.38rem;}
+    #wrap .bg1 .gradient .contents h1:nth-child(1) {width:40px;}
+    #wrap .container .main_title {font-size:1.88rem;}
+    #wrap .bg1 .gradient .contents > * {margin-bottom:50px;}
+    #wrap .bg1 .gradient .contents .sponsor_q_btn {align-self:center;}
+    /* =======================2행 반응형디자인(mobile) */
+    #wrap .bg2 {padding:50px 0;}
+    /* =======================3행 반응형디자인(mobile) */
+    #wrap .bg3 {padding:70px 0;}
+    #wrap .bg3 .contents iframe {height:300px;}
+    /* =======================4행 반응형디자인(mobile) */
+    /* =======================6행 반응형디자인(mobile) */
     #wrap .bg4,
-    #wrap .bg6 {padding: 60px 15px;}
+    #wrap .bg6 {padding:70px 15px;}
     #wrap .bg4 .contents h2,
-    #wrap .bg6 .contents h2 {font-size: 1.5rem;}
+    #wrap .bg6 .contents h2 {font-size:1.38rem;}
     #wrap .bg4 .contents h2+p,
-    #wrap .bg6 .contents h2+p {font-size: 0.81rem; margin: 24px 0;}
+    #wrap .bg6 .contents h2+p {margin:22px 0; font-size:0.81rem;}
     /* ================================5행 반응형디자인(Mobile) */
+    #wrap .bg5 .contents {}
+    #wrap .bg5 .contents ul {flex-flow: column nowrap;}
+    #wrap .bg5 .contents ul li {width: 100%; margin: 0 0 20px;}
+    #wrap .bg5 .contents ul li .title {height: auto; padding: 48px 0;}
+    #wrap .bg5 .contents ul li .title h3 {padding-top: 0;}
+    #wrap .bg5 .contents ul li .content {font-size: 0.81rem;}
     /* ================================7행 반응형디자인(Mobile) */
+    #wrap .bg7 {padding: 60px 0;}
+    #wrap .bg7 .contents p {font-size: 0.81rem;}
     /* ================================8행 반응형디자인(Mobile) */
+    #wrap .bg8 .contents {padding-top: 60px; padding-bottom: 60px;}
+    #wrap .bg8 .contents h2 {margin-bottom: 40px;}
+    #wrap .bg8 .contents .activity li .list1 {margin-bottom: 12px;}
+    #wrap .bg8 .contents .activity li:last-child {margin-top: 12px;}
+    #wrap .bg8 .contents .activity li .text h3 {font-size: 1rem; margin-bottom: 2px;}
+    #wrap .bg8 .contents .activity li .text p {font-size: 0.81rem}
     /* ================================9행 반응형디자인(Mobile) */
+    #wrap .bg9 .contents {
+        padding-top: 70px; padding-bottom: 70px;
+    }
+    #wrap .bg9 .contents .products_list li:nth-child(1),
+    #wrap .bg9 .contents .products_list li:nth-child(2) {width: 100%;}
+    #wrap .bg9 .contents .title {
+        flex-flow: column nowrap; align-items: flex-start;
+    }
+    #wrap .bg9 .contents .title h2 {margin-bottom: 20px;}
+    #wrap .bg9 .contents .products_list li:nth-child(1)::before,
+    #wrap .bg9 .contents .products_list li:nth-child(2)::before,
+    #wrap .bg9 .contents .products_list li:nth-child(3)::before {height: 186px;}
+    #wrap .bg9 .contents .products_list li .text p {font-size: 0.81rem;}
+    #wrap .bg9 .contents .benefit {
+        /* margin:0 auto; 조건, block이어야 하고, 너비가 있어야 함 */
+        float: none; display: block; width: max-content; margin: 40px auto; margin-bottom: 0;
+        font-size: 0.81rem;
+    }
     /* ================================10행 반응형디자인(Mobile) */
+    #wrap .bg10 .contents h3 {font-size: 1rem;}
+    #wrap .bg10 .contents ul li {font-size: 0.81rem;}
 } /* 320 ~ 768 end */
