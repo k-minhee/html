@@ -1,0 +1,219 @@
+/* =====================================================공통요소 선택자 */
+main .wrap {width: 1260px; margin: 0 auto; padding-top: 107px; padding-bottom: 128px;}
+main .wrap .title {
+    font-size: 2.5rem; font-weight: 500; letter-spacing: -0.01em;
+    margin-bottom: 40px; text-align: center;
+}
+main .wrap .btn {
+    margin-top: 20px; display: block; text-align: center;
+    font-size: 1.56rem; letter-spacing: -0.02em;
+    border: 2px solid #ccc; border-radius: 5px;
+    padding: 16px 0;
+}
+/* =====================================================개별요소 선택자 */
+header {
+    background-color: #1C1C1E;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    height: 100px; padding: 0 80px; align-items: center;
+}
+header h1 {}
+header h1 a {
+    color: #fff; display: inline-block;
+}
+header h1 a img {}
+header .right_menu {
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+header .right_menu li {margin-left: 89px;}
+header .right_menu li:first-child {margin: 0;}
+header .right_menu li .select {
+    border-bottom: 2px solid #fff;
+}
+header .right_menu li a {
+    color: #fff;
+    font-size: 1.44rem; letter-spacing: -0.01em;
+}
+header .right_menu li:last-child a {
+    font-weight: 600;
+}
+.bnr {
+    height: 800px; text-align: center;
+    background-image: url(../images/bg_img.png);
+    padding-top: 240px;
+    position: relative;
+}
+.bnr::after {
+    content: ''; width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.bnr p,
+.bnr h1,
+.bnr a {position:relative; z-index: 10;}
+.bnr p {font-size: 1.63rem; font-weight: 300; margin-bottom: 24px; color: #fff;}
+.bnr h1 {
+    font-size: 4.38rem; font-weight: 500; line-height: 1.5; letter-spacing: -0.02em;
+    color: #fff; margin-bottom: 200px;
+}
+.bnr a {}
+/* =============================1. 객실소개 */
+main {margin-bottom: 116px;}
+main .wrap1 {}
+main .wrap1 .t1 {text-align: left;}
+main .wrap1 .room_wrap {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    align-items: center;
+}
+main .wrap1 .room_wrap a {}
+main .wrap1 .room_wrap a img {}
+main .wrap1 .room_wrap .room_content {}
+main .wrap1 .room_wrap .room_content .tap_menu {
+    margin-bottom: 30px;
+}
+main .wrap1 .room_wrap .room_content .tap_menu a {
+    margin-left: 30px;
+    font-size: 1.56rem; letter-spacing: -0.02em; color: #838383;
+}
+main .wrap1 .room_wrap .room_content .tap_menu .active {
+    margin: 0; color: #000; font-weight: 600;
+    border-bottom: 2px solid #000;
+}
+main .wrap1 .room_wrap .room_content .room_container {
+    display: flex; flex-flow: row nowrap; background-color: #FAFAFA;
+    width: 1140px;
+}
+main .wrap1 .room_wrap .room_content .room_container a {}
+main .wrap1 .room_wrap .room_content .room_container a img {}
+main .wrap1 .room_wrap .room_content .room_container .room_txt {
+    padding: 40px 25px; display: flex; flex-flow: column nowrap; justify-content: flex-end;
+}
+main .wrap1 .room_wrap .room_content .room_container .room_txt h3 {
+    font-size: 2.06rem; font-weight: 500; letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+main .wrap1 .room_wrap .room_content .room_container .room_txt .member_num {
+    font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+main .wrap1 .room_wrap .room_content .room_container .room_txt p {
+    font-size: 1.25rem; line-height: 1.5; letter-spacing: -0.02em;
+    color: #565656;
+}
+main .wrap1 .room_wrap .room_content .room_container .room_txt .reservation {
+    margin-top: 20px; display: block; text-align: center;
+    font-size: 1.56rem; letter-spacing: -0.02em;
+    border: 2px solid #ccc; border-radius: 5px;
+    padding: 16px 0;
+}
+/* =============================2. 찾아오시는 길 */
+main .wrap2 .t2 {}
+main .wrap2 > p {
+    text-align: center; margin-bottom: 75px;
+    font-size: 1.25rem; line-height: 1.5; letter-spacing: -0.02em;
+    color: #838383;
+}
+main .wrap2 .map_wrap {
+    display: flex; flex-flow: row nowrap;
+}
+main .wrap2 .map_wrap a {}
+main .wrap2 .map_wrap a img {display: block; margin-right: 20px;}
+main .wrap2 .map_wrap .map_content {
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+main .wrap2 .map_wrap .map_content .bus {
+    margin-bottom: 20px;
+}
+main .wrap2 .map_wrap .map_content .bus h3 {
+    background-image: url(../images/bus.png);
+    background-repeat: no-repeat; padding-left: 33px;
+}
+main .wrap2 .map_wrap .map_content .subway {}
+main .wrap2 .map_wrap .map_content .subway h3 {
+    background-image: url(../images/subway.png);
+    background-repeat: no-repeat; padding-left: 33px;
+}
+/* ==========찾아오시는 길 공통 선택자 */
+main .wrap2 .map_wrap .map_content .way {
+    height: calc((100% - 20px) / 2);
+    background-color: #FAFAFA;
+    padding: 46px;
+}
+main .wrap2 .map_wrap .map_content .way h3 {
+    font-size: 1.56rem; font-weight: 600; letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+main .wrap2 .map_wrap .map_content .way h4 {
+    font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02em;
+    color: #1C1C1E; margin-bottom: 10px;
+}
+main .wrap2 .map_wrap .map_content .way p {
+    font-size: 1.13rem; line-height: 1.4; letter-spacing: -0.02em;
+    color: #565656; margin-bottom: 20px;
+}
+main .wrap2 .map_wrap .map_content .way p:last-child {margin: 0;}
+/* =============================3. 주변 관광지 */
+main .wrap3 {}
+main .wrap3 .t3 {}
+main .wrap3 .tour {
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+    margin-bottom: 70px;
+
+}
+main .wrap3 .tour li {
+    display: flex; flex-flow: column nowrap;
+    width: calc((100% - 20px) / 2);
+}
+main .wrap3 .tour li:nth-child(1),
+main .wrap3 .tour li:nth-child(2) {margin-bottom: 40px;}
+main .wrap3 .tour li a {}
+main .wrap3 .tour li a img {margin-bottom: 20px;}
+main .wrap3 .tour li .tour_name {
+    font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em;
+    margin-bottom: 16px; color:#000;
+}
+main .wrap3 .tour li > p {
+    font-size: 1.25rem; line-height: 1.5; letter-spacing: -0.02em;
+    color: #565656;
+}
+main .wrap3 .more {
+    background-image: url(../images/arrow_bottom.png);
+    background-repeat: no-repeat;
+    background-position: 45.5%;
+}
+/* =============================FOOTER */
+footer {
+    background-color: #1C1C1E;
+    padding: 57.5px 0;
+}
+footer .footer_wrap {
+    width: 1260px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+footer .footer_wrap .left_content {}
+footer .footer_wrap .left_content ul {}
+footer .footer_wrap .left_content ul li {
+    color: #fff;
+    font-size: 0.88rem; line-height: 1.5; letter-spacing: -0.02em;
+}
+/* =============footer ul 개별요소 */
+footer .footer_wrap .left_content .site_links {
+    display: flex; flex-flow: row nowrap;
+    margin-bottom: 30px;
+}
+footer .footer_wrap .left_content .site_links li {}
+footer .footer_wrap .left_content .site_links li::after {
+    content: ''; display: inline-block;
+    width: 1px; height: 10px; 
+    margin: 0 10px; background-color: #fff;
+}
+footer .footer_wrap .left_content .site_links li:last-child::after {
+    display: none; margin: 0;
+}
+footer .footer_wrap .left_content .site_links li a {
+    color: #fff; display: inline-block;
+    font-size: 0.88rem; line-height: 1.5; letter-spacing: -0.02em;
+    position: relative;
+}
+footer .footer_wrap .right_content {}
+footer .footer_wrap .right_content img {}
