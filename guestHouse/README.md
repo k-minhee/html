@@ -1,8 +1,8 @@
 <!-- ========================================================================FONT -->
-### HEADER 23 regular
-font-size: 1.44rem; letter-spacing: -0.01em;
+### HEADER 20 regular
+font-size: 1.25rem; letter-spacing: -0.01em;
 ### HEADER 강조(게스트하우스 예약 부분)
-font-size: 1.44rem; letter-spacing: -0.01em; font-weight: 600;
+font-size: 1.25rem; letter-spacing: -0.01em; font-weight: 600;
 ### BNR 26
 font-size: 1.63rem;
 ### BNR 타이틀 70(Noto serif KR)
@@ -40,4 +40,5 @@ color: #ccc
 background-color: #FAFAFA;
 ### 100 / 글자색(#000 위)
 color: #ffffff;
-
+### 포인트 컬러
+#2669E5

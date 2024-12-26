@@ -1,0 +1,155 @@
+/* =====================================================공통요소 선택자 */
+main {padding: 125px 0 225px 0;}
+main .wrap {
+    width: 1260px; margin: 0 auto;
+    margin-bottom: 200px;
+}
+main .wrap >:last-child {margin: 0;}
+main .content2 .history,
+main .content3,
+main .content4,
+main .content5 {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: flex-end;
+}
+main .wrap .txt {
+    font-size: 1.31rem; line-height: 1.5; letter-spacing: -0.02em;
+    color: #565656;
+}
+main .wrap .txt1 {margin-bottom: 15px;}
+main .wrap h2 {
+    font-size: 2.06rem; font-weight: 600; letter-spacing: -0.02em;
+    margin-bottom: 24px;
+}
+/* =============================0. 헤더+bnr */
+header {
+    background-color: #1C1C1E;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    height: 100px; padding: 0 80px; align-items: center;
+}
+header h1 {}
+header h1 a {
+    color: #fff; display: inline-block;
+}
+header h1 a img {}
+header .right_menu {
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+header .right_menu li {margin-left: 89px;}
+header .right_menu li:first-child {margin: 0;}
+header .right_menu li .select {
+    border-bottom: 2px solid #fff;
+}
+header .right_menu li a {
+    color: #fff;
+    font-size: 1.25rem; letter-spacing: -0.01em;
+}
+header .right_menu li:last-child a {
+    font-weight: 600;
+}
+.bnr {
+    height: 440px; text-align: center;
+    background-image: url(../images/main_visual29.jpg);
+    background-position: center; background-size: cover;
+    padding-top: 163px;
+    position: relative;
+}
+.bnr::after {
+    content: ''; width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+.bnr p,
+.bnr h1 {position:relative; z-index: 10;}
+.bnr p {font-size: 1.63rem; font-weight: 300; margin-bottom: 24px; color: #fff;}
+.bnr h1 {
+    font-size: 4.38rem; font-weight: 500; line-height: 1.5; letter-spacing: -0.02em;
+    color: #fff; margin-bottom: 200px;
+}
+/* ========================================1. 호랑가시나무창작소 소개 */
+main .content1 {text-align: center; margin-bottom: 158px;}
+main .content1 h1 {
+    font-size: 2.5rem; font-weight: 500; letter-spacing: -0.01em;
+    margin-bottom: 48px;
+}
+main .content1 .txt {
+    font-size: 1.25rem; line-height: 1.5; letter-spacing: -0.02em;
+    color: #838383;
+    margin-bottom: 76px;
+}
+main .content1 p:last-child img {
+    display: block; height: 500px;
+}
+/* ========================================2. 역사 */
+main .content2 {}
+main .content2 h2 {margin-bottom: 30px;}
+main .content2 .history {}
+main .content2 .history > p {}
+main .content2 .history > p img {}
+main .content2 .history .txt_content {margin-left: 30px;}
+main .content2 .history .txt_content .txt {}
+main .content2 .history .txt_content .txt_emphasize {
+    font-size: 1.5rem; font-weight: 500; line-height: 1.5; letter-spacing: -0.02em;
+    color: #2669E5;
+}
+/* ========================================3. 오픈 스튜디오 */
+main .content3 {}
+main .content3 .txt_content {text-align: right; margin-right: 30px;}
+main .content3 .txt_content h2 {}
+main .content3 .txt_content .txt {}
+main .content3 .txt_content .txt1 {}
+main .content3 .image {}
+main .content3 .image img {display: block;}
+/* ========================================4. 워크숍 */
+main .content4 {}
+main .content4 .image {}
+main .content4 .image img {}
+main .content4 .txt_content {margin-left: 30px;}
+main .content4 .txt_content h2 {}
+main .content4 .txt_content h2 .txt {}
+main .content4 .txt_content h2 .txt1 {}
+/* ========================================4. 워크숍 */
+main .content5 {}
+main .content5 .txt_content {text-align: right; margin-right: 30px;}
+main .content5 .txt_content h2 {}
+main .content5 .txt_content h2 .txt {}
+main .content5 .image {}
+main .content5 .image img {}
+/* =============================FOOTER */
+footer {
+    background-color: #1C1C1E;
+    padding: 57.5px 0;
+}
+footer .footer_wrap {
+    width: 1260px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+footer .footer_wrap .left_content {}
+footer .footer_wrap .left_content ul {}
+footer .footer_wrap .left_content ul li {
+    color: #fff;
+    font-size: 0.88rem; line-height: 1.5; letter-spacing: -0.02em;
+}
+/* =============footer ul 개별요소 */
+footer .footer_wrap .left_content .site_links {
+    display: flex; flex-flow: row nowrap;
+    margin-bottom: 30px;
+}
+footer .footer_wrap .left_content .site_links li {}
+footer .footer_wrap .left_content .site_links li::after {
+    content: ''; display: inline-block;
+    width: 1px; height: 10px; 
+    margin: 0 10px; background-color: #fff;
+}
+footer .footer_wrap .left_content .site_links li:last-child::after {
+    display: none; margin: 0;
+}
+footer .footer_wrap .left_content .site_links li a {
+    color: #fff; display: inline-block;
+    font-size: 0.88rem; line-height: 1.5; letter-spacing: -0.02em;
+    position: relative;
+}
+footer .footer_wrap .right_content {}
+footer .footer_wrap .right_content img {}
+

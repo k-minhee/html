@@ -11,6 +11,7 @@ main .wrap .btn {
     padding: 16px 0;
 }
 /* =====================================================개별요소 선택자 */
+/* =============================0. 헤더+bnr */
 header {
     background-color: #1C1C1E;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
@@ -31,14 +32,15 @@ header .right_menu li .select {
 }
 header .right_menu li a {
     color: #fff;
-    font-size: 1.44rem; letter-spacing: -0.01em;
+    font-size: 1.25rem; letter-spacing: -0.01em;
 }
 header .right_menu li:last-child a {
     font-weight: 600;
 }
 .bnr {
     height: 800px; text-align: center;
-    background-image: url(../images/bg_img.png);
+    background-image: url(../images/bg_img.jpg);
+    background-position: center; background-size: cover;
     padding-top: 240px;
     position: relative;
 }
