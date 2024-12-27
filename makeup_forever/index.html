@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 | 메이크업 포에버</title>
+    <!-- 웹 글꼴 연결 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+    <!-- 외부 스타일시트 연결 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+<body>
+    <div class="h_bg">
+        <header>
+            <h1><a href="#"><img src="#" alt="makeupforever"></a></h1>
+            <div class="h_right">
+                <div class="h_top">
+                    <!-- 검색 팝업을 자식으로 두기 위해 div를 만듦 -->
+                    <div class="search">
+                        <a href="#"><img src="#" alt="검색"></a>
+                        <!-- 검색 클릭 시 실행되는 팝업(아래) -->
+                        <div class="search_popup">
+                            <a href="#"><img src="#" alt="검색팝업 닫기"></a>
+                            <form action="#" method="get">
+                                <input type="text" name="search" placeholder="검색어를 입력하세요">
+                            </form>
+                            <h1>실시간 인기검색어</h1>
+                            <ol>
+                                <li>
+                                    <p class="rank">1</p>
+                                    <p class="name">쿠션</p>
+                                    <p class="change"><img src="#" alt="상승"></p>
+                                </li>
+                                <li>
+                                    <p class="rank">2</p>
+                                    <p class="name">파운데이션</p>
+                                    <p class="change"><img src="#" alt="동일"></p>
+                                </li>
+                                <li>
+                                    <p class="rank">3</p>
+                                    <p class="name">아이섀도우</p>
+                                    <p class="change"><img src="#" alt="동일"></p>
+                                </li>
+                                <li>
+                                    <p class="rank">4</p>
+                                    <p class="name">아이브로우</p>
+                                    <p class="change"><img src="#" alt="상승"></p>
+                                </li>
+                                <li>
+                                    <p class="rank">5</p>
+                                    <p class="name">립스틱</p>
+                                    <p class="change"><img src="#" alt="하락"></p>
+                                </li>
+                            </ol>
+                            <h1>추천 키워드</h1>
+                            <ul>
+                                <li><a href="#">프라이머</a></li>
+                                <li><a href="#">립틴트</a></li>
+                                <li><a href="#">파운데이션</a></li>
+                                <li><a href="#">파우더</a></li>
+                                <li><a href="#">아이브로우</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">고객센터</a>
+                </div>
+                <div class="h_btm">
+                    <div class="h_b_left">
+                        <a href="#">브랜드</a>
+                        <a href="#">이벤트</a>
+                        <a href="#">미용소품</a>
+                    </div>
+                    <nav>
+                        <a href="#">BEST</a>
+                        <a href="#">FACE</a>
+                        <a href="#">EYES</a>
+                        <a href="#">LIPS</a>
+                        <!-- nav 마우스 오버 시 출력 서브메뉴(아래) -->
+                        <div class="sub_bg"></div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+</html>
