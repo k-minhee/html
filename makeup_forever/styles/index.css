@@ -1,0 +1,138 @@
+/* header 공통값 */
+.h_bg header * {color: #fff;}
+/* =========================================header */
+.h_bg {background-color: #111; position: relative;}
+.h_bg header {
+    width: 1400px; margin: 0 auto; height: 125px;
+    /* h1+h_right 정렬 */
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+.h_bg header h1 {}
+.h_bg header h1 a {}
+.h_bg header h1 a img {}
+.h_bg header .h_right {
+    width: calc(100% - 150px);
+    padding-left: 20px;
+}
+.h_bg header .h_right .h_top {
+    float: right; margin-bottom: 20px;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+.h_bg header .h_right .h_top .search {}
+.h_bg header .h_right .h_top .search > a {}
+.h_bg header .h_right .h_top .search > a img {}
+.h_bg header .h_right .h_top > a {
+    margin-left: 16px;
+    font-size: 0.88rem; letter-spacing: -0.02em;
+}
+/* =========================================header 검색팝업(S) */
+.h_bg header .h_right .h_top .search .search_popup {
+    display: none; /* 초기 숨기기(검색 아이콘 클릭 시에만 출력 대상) */
+    background-color: #111;
+    position: fixed; /* 좌표 필수 */ right: 0; top: 0;
+    width: 350px; height: 100vh; padding: 20px;
+}
+.h_bg header .h_right .h_top .search .search_popup > * {margin-bottom: 50px;}
+.h_bg header .h_right .h_top .search .search_popup > *:last-child {margin: 0;}
+.h_bg header .h_right .h_top .search .search_popup .close_btn {float: right;}
+.h_bg header .h_right .h_top .search .search_popup .close_btn img {}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm {
+    clear: both;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    border-bottom: 2px solid #fff; padding-bottom: 5px;
+}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm input[name$=search] {
+    background: none; width: calc(100% - 30px);
+}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm input[name$=search]::placeholder {letter-spacing: -0.02em; color: #aaa;}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm #search_btn {}
+.h_bg header .h_right .h_top .search .search_popup h2 {
+    font-size: 1.13rem; font-weight: 500; letter-spacing: -0.02em;
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list {
+    display: flex; flex-flow: column nowrap;
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list li {
+    margin-bottom: 14px;
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list li:last-child {margin: 0;}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .num {
+    font-size: 0.94rem; letter-spacing: -0.02em;
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .keywords {
+    font-size: 0.94rem; letter-spacing: -0.02em;
+    margin-left: 20px;
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .rating {float: right;}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .rating img {}
+.h_bg header .h_right .h_top .search .search_popup .keyword_recommend {
+    display: flex; flex-flow: row wrap;
+}
+.h_bg header .h_right .h_top .search .search_popup .keyword_recommend a {
+    border: 1px solid #fff; border-radius: 20px;
+    padding: 10px 15px; margin: 0 7px 7px 0;
+    font-size: 0.94rem; letter-spacing: -0.02em;
+}
+/* =========================================header 검색팝업(E) */
+.h_bg header .h_right .h_btm .h_b_left a,
+.h_bg header .h_right .h_btm nav > a {
+    font-size: 1.25rem; font-weight: 500; letter-spacing: -0.02em;
+}
+.h_bg header .h_right .h_btm a:first-child {margin: 0;}
+.h_bg header .h_right .h_btm {
+    clear: both; /* 앞의 형제에게 들어간 값이 연속되지 않도록 처리(float 제거하며 내리기) */
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+.h_bg header .h_right .h_btm .h_b_left {}
+.h_bg header .h_right .h_btm .h_b_left a {margin-left: 20px;}
+.h_bg header .h_right .h_btm .h_b_left a:first-child {margin: 0;}
+.h_bg header .h_right .h_btm nav {}
+.h_bg header .h_right .h_btm nav > a {margin-left: 30px;}
+.h_bg header .h_right .h_btm nav > a:first-child {margin: 0;}
+/* =========================================header 서브(S) */
+.h_bg header .h_right .h_btm nav .sub_bg {
+    display: none;
+    background-color: #111;
+    position: absolute; left: 0; top:125px;
+    /* absolute 작성 시 반드시 width 속성도 함께 써야 한다 */
+    width: 100%;
+}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents {
+    width: 1400px; height: 240px;
+    margin: 0 auto; padding-top: 40px;
+    display: flex; flex-flow: row nowrap;
+}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents > * {
+    width: 200px; padding-left: 20px;
+}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents > * li {margin-bottom: 20px;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents > * li a {
+    display: block;
+    padding-bottom: 3px; letter-spacing: -0.02em;
+}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li a {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 .active {
+    border-bottom: 2px solid #fff;
+}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 .active a {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 li {}
+/* ============================depth2 sub 공통요소 */
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub li a {}
+/* ============================depth2 sub 개별요소 */
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub1 {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub1 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub1 li a {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub2 {display: none;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub2 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub2 li a {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 {display: none;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 li a {}
+/* =========================================header 서브(E) */
+.h_bg header .h_right .h_btm .h_btm_right {}
+/* =========================================header */
