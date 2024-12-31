@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광고배너 구조 연습</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body {}
+        body .slides_wrap {
+            background-color: aqua;
+            height: 650px;
+            position: relative;
+        }
+        body .slides_wrap .slides_contents {
+            background-color: lime;
+            height: 100%;
+        }
+        body .slides_wrap .slides_contents .slide {
+            height: 100%;
+        }
+        body .slides_wrap .slide .content {
+            border: 5px solid red;
+            width: 1400px; margin: 0 auto;
+            overflow: hidden;
+        }
+        body .slides_wrap .slide .content .title {
+            border: 5px solid blue;
+            width: 50%; float: right;
+            padding-top: 160px;
+        }
+        body .slides_wrap .slide .content .title img {}
+        body .slides_wrap .slide .content .title .bnr_link {
+            display: block; margin-top: 49px;
+            width: min-content; padding: 8px 40px;
+            border: 1.5px solid #111;
+            font-size: 1.38rem; letter-spacing: -0.02em;
+            font-weight: 300;
+        }
+        body .slides_wrap .slide .content .title .bnr_link:hover {
+            background-color: #111; color: #fff;
+        }
+        .slides_wrap .prev_btn, .slides_wrap .next_btn {
+            background-color: yellow;
+            position: absolute; top: 45%;
+        }
+        body .slides_wrap .prev_btn {left: 190px;}
+        body .slides_wrap .prev_btn img {}
+        body .slides_wrap .next_btn {right: 190px;}
+        body .slides_wrap .next_btn img {}
+        body .slides_wrap .scroll_wrap {
+            background-color: #ccc; width: 1400px; height: 2px;
+            position: relative; bottom: 30px; margin: 0 auto;
+        }
+        body .slides_wrap .scroll_wrap .scrollbar {
+            background-color: #111;
+            width: 200px; height: 100%;
+        }
+        /* =====================================================개별요소 */
+        body .slides_wrap .slides_contents .slide1 {
+            display: none;
+            background-image: url(./images/bnr1.jpg);
+        }
+        body .slides_wrap .slides_contents .slide1 .content {}
+        body .slides_wrap .slides_contents .slide1 .content .title {}
+        body .slides_wrap .slides_contents .slide1 .content .title img {}
+        body .slides_wrap .slides_contents .slide1 .content .title .bnr_link {}
+        body .slides_wrap .slides_contents .slide2 {
+            background-image: url(./images/bnr2.jpg);
+        }
+        body .slides_wrap .slides_contents .slide2 .content {}
+        body .slides_wrap .slides_contents .slide2 .content .title {}
+        body .slides_wrap .slides_contents .slide2 .content .title img {}
+        body .slides_wrap .slides_contents .slide2 .content .title .bnr_link {}
+    </style>
+</head>
+<body>
+    <!-- 전체 bnr 안에 있는 모든 요소를 묶는 용도 -->
+    <div class="slides_wrap">
+        <!-- 배너1, 배너2 등등 배너들끼리 묶는 용도 -->
+        <div class="slides_contents">
+            <!-- 배너1 내부 요소 -->
+            <div class="slide slide1"> <!-- 배너 1 배경으로 모델 이미지 넣기 -->
+                <!-- 배너1의 컨텐츠 묶어주는 용도(1400px 컨텐츠 너비용) -->
+                <div class="content">
+                    <!-- 50% 위치에 타이틀 영역 맞춰주기 위해 묶는 용도 -->
+                    <div class="title"> 
+                        <img src="./images/bnr1_title.png" alt="">
+                        <a href="#" class="bnr_link">DISCOVER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="content">
+                    <div class="title">
+                        <img src="./images/bnr2_title.png" alt="">
+                        <a href="#" class="bnr_link">DISCOVER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 이전, 다음 버튼 -->
+        <a href="#" class="prev_btn"><img src="./images/bnr_prev.png" alt=""></a>
+        <a href="#" class="next_btn"><img src="./images/bnr_next.png" alt=""></a>
+        <!-- 하단 스크롤 -->
+        <div class="scroll_wrap">
+        <div class="scrollbar"></div>
+    </div>
+    </div>
+</body>
+</html>
