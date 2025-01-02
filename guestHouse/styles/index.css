@@ -11,16 +11,14 @@ main .wrap .btn {
     padding: 16px 0;
 }
 /* =====================================================개별요소 선택자 */
-/* =============================0. 헤더+bnr */
+/* =============================0. 헤더 */
 header {
     background-color: #1C1C1E;
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     height: 100px; padding: 0 80px; align-items: center;
 }
 header h1 {}
-header h1 a {
-    color: #fff; display: inline-block;
-}
+header h1 a {}
 header h1 a img {}
 header .right_menu {
     display: flex; flex-flow: row nowrap; align-items: center;
@@ -50,11 +48,12 @@ header .right_menu li:last-child a {
     background-color: rgba(0,0,0,0.7);
     z-index: 1;
 }
-.bnr p,
-.bnr h1,
-.bnr a {position:relative; z-index: 10;}
-.bnr p {font-size: 1.63rem; font-weight: 300; margin-bottom: 24px; color: #fff;}
-.bnr h1 {
+main .bnr h1 {font-family:'Noto Serif KR', serif ;}
+main .bnr p,
+main .bnr h1,
+main .bnr a {position:relative; z-index: 10;}
+main .bnr p {font-size: 1.63rem; font-weight: 300; margin-bottom: 24px; color: #fff;}
+main .bnr h1 {
     font-size: 4.38rem; font-weight: 500; line-height: 1.5; letter-spacing: -0.02em;
     color: #fff; margin-bottom: 200px;
 }
@@ -67,8 +66,8 @@ main .wrap1 .room_wrap {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     align-items: center;
 }
-main .wrap1 .room_wrap a {}
-main .wrap1 .room_wrap a img {}
+main .wrap1 .room_wrap p {}
+main .wrap1 .room_wrap p img {}
 main .wrap1 .room_wrap .room_content {}
 main .wrap1 .room_wrap .room_content .tap_menu {
     margin-bottom: 30px;
@@ -85,8 +84,7 @@ main .wrap1 .room_wrap .room_content .room_container {
     display: flex; flex-flow: row nowrap; background-color: #FAFAFA;
     width: 1140px;
 }
-main .wrap1 .room_wrap .room_content .room_container a {}
-main .wrap1 .room_wrap .room_content .room_container a img {}
+main .wrap1 .room_wrap .room_content .room_container > p {}
 main .wrap1 .room_wrap .room_content .room_container .room_txt {
     padding: 40px 25px; display: flex; flex-flow: column nowrap; justify-content: flex-end;
 }
@@ -182,6 +180,7 @@ main .wrap3 .more {
     background-image: url(../images/arrow_bottom.png);
     background-repeat: no-repeat;
     background-position: 45.5%;
+    border: 1px solid #ccc; border-radius: 5px;
 }
 /* =============================FOOTER */
 footer {
@@ -216,6 +215,11 @@ footer .footer_wrap .left_content .site_links li a {
     color: #fff; display: inline-block;
     font-size: 0.88rem; line-height: 1.5; letter-spacing: -0.02em;
     position: relative;
+}
+footer .footer_wrap .left_content address {}
+footer .footer_wrap .left_content address p {
+    color: #fff;
+    font-size: 0.88rem; line-height: 1.5; letter-spacing: -0.02em;
 }
 footer .footer_wrap .right_content {}
 footer .footer_wrap .right_content img {}
