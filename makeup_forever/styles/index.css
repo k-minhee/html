@@ -3,7 +3,7 @@
 /* =========================================header */
 .h_bg {background-color: #111; position: relative;}
 .h_bg header {
-    width: 1400px; margin: 0 auto; height: 125px;
+    max-width:1400px; margin: 0 auto; height: 125px;
     /* h1+h_right 정렬 */
     display: flex; flex-flow: row nowrap; align-items: center;
 }
@@ -20,10 +20,53 @@
 }
 .h_bg header .h_right .h_top .search {}
 .h_bg header .h_right .h_top .search > a {}
+.h_bg header .h_right .h_top .search .m_all_nav {display: none;}
 .h_bg header .h_right .h_top .search > a img {}
 .h_bg header .h_right .h_top > a {
     margin-left: 16px;
     font-size: 0.88rem; letter-spacing: -0.02em;
+}
+/* ========================모바일 메뉴 클릭 시 실행되는 서브메뉴 전체(아래) */
+.h_bg header .h_right .h_top .search .m_nav {
+    background-color: #fff;
+    position: fixed; right: 0; top: 125px;
+    z-index: 10;
+    width: 100vw; height: 100vh;
+    padding: 30px 15px 90px;
+}
+.h_bg header .h_right .h_top .search .m_nav a {
+    color: #111; font-size: 0.88rem;
+}
+.h_bg header .h_right .h_top .search .m_nav .login_join_cs {
+    background-color: aqua; text-align: right;
+    padding-bottom: 10px; border-bottom: 1px solid #111;
+}
+.h_bg header .h_right .h_top .search .m_nav .login_join_cs a {
+    margin-left: 16px;
+}
+.h_bg header .h_right .h_top .search .m_nav .login_join_cs a:first-child {margin: 0;}
+.h_bg header .h_right .h_top .search .nav {}
+.h_bg header .h_right .h_top .search .m_nav .nav_menu {}
+.h_bg header .h_right .h_top .search .m_nav .nav_menu > li {
+    font-size: 1rem;
+    margin-bottom: 1px solid #ddd;
+}
+.h_bg header .h_right .h_top .search .m_nav .nav_menu > li > a {
+    display: block; font-weight: 500;
+    background-color: yellow;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.h_bg header .h_right .h_top .search .m_nav .nav_menu > li .sub {
+    background-color: orange;
+}
+.h_bg header .h_right .h_top .search .m_nav .nav_menu > li .sub li {}
+.h_bg header .h_right .h_top .search .m_nav .nav_menu > li .sub li a {
+    display: block; color: #888;
+    padding: 15px 0 15px 12px;
+}
+.h_bg header .h_right .h_top .search .m_nav .nav_menu > li .sub li:first-child a {
+    color: #111;
 }
 /* =========================================header 검색팝업(S) */
 .h_bg header .h_right .h_top .search .search_popup {
@@ -98,7 +141,7 @@
     width: 100%;
 }
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents {
-    width: 1400px; height: 240px;
+    max-width:1400px; height: 240px;
     margin: 0 auto; padding-top: 40px;
     display: flex; flex-flow: row nowrap;
 }
@@ -153,7 +196,7 @@ main .slides_wrap .slides_container .slide {
 }
 main .slides_wrap .slides_container .slide .contents {
     border: 5px solid red;
-    width: 1400px; margin: 0 auto;
+    max-width:1400px; margin: 0 auto;
     overflow: hidden;
 }
 main .slides_wrap .slides_container .slide .contents .title {
@@ -182,7 +225,7 @@ main .slides_wrap .next_btn {right: 190px;}
 main .slides_wrap .next_btn img {}
 main .slides_wrap .scroll_bg {
     background-color: #ccc;
-    width: 1400px; height: 2px; margin: 0 auto;
+    max-width:1400px; height: 2px; margin: 0 auto;
     position: relative; bottom: 30px;
 }
 main .slides_wrap .scroll_bg .scrollbar {
@@ -191,8 +234,10 @@ main .slides_wrap .scroll_bg .scrollbar {
 }
 /* =========================================main1 광고배너(개별 배너) */
 main .slides_wrap .slides_container .slide1 {
-    display: none; /* 초기 숨기기 */
     background-image: url(../images/bnr1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 main .slides_wrap .slides_container .slide1 .contents {}
 main .slides_wrap .slides_container .slide1 .contents .title {}
@@ -200,8 +245,73 @@ main .slides_wrap .slides_container .slide1 .contents .title  img {}
 main .slides_wrap .slides_container .slide1 .contents .title  .bnr_link {}
 main .slides_wrap .slides_container .slide1 .contents .title  .bnr_link:hover {}
 main .slides_wrap .slides_container .slide2 {
-    background-image: url(../images/bnr2.jpg);}
+    display: none; /* 초기 숨기기 */
+    background-image: url(../images/bnr2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 main .slides_wrap .slides_container .slide2 .contents {}
 main .slides_wrap .slides_container .slide2 .contents .title {}
 main .slides_wrap .slides_container .slide2 .contents .title  img {}
 main .slides_wrap .slides_container .slide2 .contents .title  .bnr_link {}
+/* ===========================================2행 FACE BEST */
+main .face_best_wrap {
+    background-color: aqua;
+    max-width:1400px; margin: 0 auto;
+    padding: 100px 0;
+}
+main .face_best_wrap .title {
+    background-color: lime;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+    margin-bottom: 40px;
+}
+main .face_best_wrap .title h2 {
+    font-size: 1.88rem; font-weight: 600;
+}
+main .face_best_wrap .title .more {
+}
+main .face_best_wrap .contents {
+    background-color: yellow;
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+}
+main .face_best_wrap .contents li {
+    background-color: coral;
+    width: calc((100% - (30px * 2)) / 3);
+}
+main .face_best_wrap .contents li .product {
+    position: relative;
+}
+main .face_best_wrap .contents li .product .label {
+    background-color: #fff;
+    position: absolute; top: 0; left: 0;
+    padding: 5px 10px;
+    letter-spacing: -0.02em;
+} 
+main .face_best_wrap .contents li .product > a  {} 
+main .face_best_wrap .contents li .product > a img {width: 100%;}
+/* ==============================================2행 상품 마우스 올렸을 시 출력대상 - S */
+main .face_best_wrap .contents li .product:hover .icon {display: block;}
+main .face_best_wrap .contents li .product .icon {
+    border: 5px solid red;
+    position: absolute; left:0; bottom: 180px; /* absolute 주면 블럭이어도 인라인처럼 됨 */
+    width: 100%; text-align: center;
+    display: none; /* 초기 숨기기 */
+} 
+main .face_best_wrap .contents li .product .icon a {opacity:0.5;}
+main .face_best_wrap .contents li .product .icon a:hover {opacity: 1;}
+main .face_best_wrap .contents li .product .icon a img {} 
+/* ==============================================2행 상품 마우스 올렸을 시 출력대상 - E*/
+main .face_best_wrap .contents li .txt {}
+main .face_best_wrap .contents li .txt .category {
+    margin-bottom: 10px;
+} 
+main .face_best_wrap .contents li .txt h3 {
+    font-size: 1.25rem; font-weight: 500;
+    margin-bottom: 35px;
+} 
+main .face_best_wrap .contents li .txt .price {
+    font-size: 1.13rem; font-weight: 500;
+    letter-spacing: -0.02em;
+} 

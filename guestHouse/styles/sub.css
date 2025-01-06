@@ -81,7 +81,7 @@ main .content1 .txt {
     margin-bottom: 76px;
 }
 main .content1 p:last-child img {
-    display: block; height: 500px;
+    height: 500px;
 }
 /* ========================================2. 역사 */
 main .content2 {}
@@ -151,6 +151,11 @@ footer .footer_wrap .left_content .site_links li a {
     color: #fff; display: inline-block;
     font-size: 0.88rem; line-height: 1.5; letter-spacing: -0.02em;
     position: relative;
+}
+footer .footer_wrap .left_content address {}
+footer .footer_wrap .left_content address p {
+    color: #fff;
+    font-size: 0.88rem; line-height: 1.5; letter-spacing: -0.02em;
 }
 footer .footer_wrap .right_content {}
 footer .footer_wrap .right_content img {}
