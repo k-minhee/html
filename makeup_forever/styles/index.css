@@ -28,17 +28,18 @@
 }
 /* ========================모바일 메뉴 클릭 시 실행되는 서브메뉴 전체(아래) */
 .h_bg header .h_right .h_top .search .m_nav {
+    display: none;
     background-color: #fff;
     position: fixed; right: 0; top: 125px;
-    z-index: 10;
-    width: 100vw; height: 100vh;
+    z-index: 999;
+    width: 100%; height: calc(100vh - 125px);
     padding: 30px 15px 90px;
 }
 .h_bg header .h_right .h_top .search .m_nav a {
-    color: #111; font-size: 0.88rem;
+    color: #111; font-size: 0.88rem; font-weight: 500;
 }
 .h_bg header .h_right .h_top .search .m_nav .login_join_cs {
-    background-color: aqua; text-align: right;
+    text-align: right;
     padding-bottom: 10px; border-bottom: 1px solid #111;
 }
 .h_bg header .h_right .h_top .search .m_nav .login_join_cs a {
@@ -53,13 +54,13 @@
 }
 .h_bg header .h_right .h_top .search .m_nav .nav_menu > li > a {
     display: block; font-weight: 500;
-    background-color: yellow;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
 }
-.h_bg header .h_right .h_top .search .m_nav .nav_menu > li .sub {
-    background-color: orange;
+.h_bg header .h_right .h_top .search .m_nav .nav_menu > li:nth-child(4) > a {
+    border-bottom: 1px solid #000;
 }
+.h_bg header .h_right .h_top .search .m_nav .nav_menu > li .sub {}
 .h_bg header .h_right .h_top .search .m_nav .nav_menu > li .sub li {}
 .h_bg header .h_right .h_top .search .m_nav .nav_menu > li .sub li a {
     display: block; color: #888;
@@ -314,4 +315,39 @@ main .face_best_wrap .contents li .txt h3 {
 main .face_best_wrap .contents li .txt .price {
     font-size: 1.13rem; font-weight: 500;
     letter-spacing: -0.02em;
-} 
+}
+/* =============================================3행 메이크업 컨설팅*/
+main .consulting_wrap {
+    background-color: #000;
+    padding: 100px 0;
+    text-align: center;
+}
+main .consulting_wrap * {
+    color: #fff;
+}
+main .consulting_wrap p:nth-of-type(1) {
+    font-family:'Noto Serif KR', serif ;
+    font-size: 2.5em; margin-bottom: 44px;
+    letter-spacing: -0.02em;
+}
+main .consulting_wrap h1 {
+    font-family:'Noto Serif KR', serif ;
+    font-size: 5.63em; font-weight: 700;
+    margin-bottom: 100px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+main .consulting_wrap h2 {
+    font-size: 1.88rem; font-weight: 600;
+    margin-bottom: 11px;
+}
+main .consulting_wrap p:nth-of-type(2) {
+    font-size: 1.13rem;
+    margin-bottom: 100px;
+}
+main .consulting_wrap > a {
+    display: inline-block;
+    background-color: #fff; color: #000;
+    width: 190px; padding: 10px 0;
+    font-size: 1.25rem; font-weight: 600;
+}

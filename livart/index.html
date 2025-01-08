@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 | 리바트몰</title>
+    <!-- 웹폰트 연결 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+     <!-- 외부 스타일시트 연결 -->
+     <link href="./styles/reset.css" rel="stylesheet">
+     <link href="./styles/index.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ================================0.헤더 -->
+    <div class="header_bg">
+        <header>
+            <!-- ========================0-1.헤더 top / 로고~마이스토어 -->
+            <div class="h_top">
+                <div class="h_top_left">
+                    <h1><a href="#"><img src="./images/logo_livart.png" alt="livart 홈"></a></h1>
+                    <form action="#" method="get">
+                        <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요">
+                    </form>
+                    <!-- ====================검색창 클릭 시 활성화되는 영역 -->
+                    <div class="search_popup">
+                        <h1>인기 검색어</h1>
+                        <ol>
+                            <li>
+                                <p class="num">1</p>
+                                <p class="p_name">소파</p>
+                                <p class="rank"><img src="./images/rank_up.png" alt="순위상승"></p>
+                            </li>
+                            <li>
+                                <p class="num">2</p>
+                                <p class="p_name">의자</p>
+                                <p class="rank"><img src="./images/rank_down.png" alt="순위하락"></p>
+                            </li>
+                            <li>
+                                <p class="num">3</p>
+                                <p class="p_name">아이방</p>
+                                <p class="rank"><img src="./images/rank_down.png" alt="순위하락"></p>
+                            </li>
+                            <li>
+                                <p class="num">4</p>
+                                <p class="p_name">주방 아일랜드 키친</p>
+                                <p class="rank"><img src="./images/rank_up.png" alt="순위상승"></p>
+                            </li>
+                            <li>
+                                <p class="num">5</p>
+                                <p class="p_name">이달의 행사 상품</p>
+                                <p class="rank"><img src="./images/rank_up.png" alt="순위상승"></p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="h_top_right">
+                    <a href="#">
+                        <img src="./images/login.png" alt="#">
+                        <span>로그인</span>
+                    </a>
+                    <a href="#">
+                        <img src="./images/join.png" alt="#">
+                        <span>회원가입</span>
+                    </a>
+                    <a href="#">
+                        <img src="./images/shop.png" alt="#">
+                        <span>마이스토어</span>
+                    </a>
+                </div>
+            </div>
+            <!-- ========================0-2.헤더 bottom / 카테고리 ~ 중고가구 -->
+            <div class="h_btm">
+                <a href="#">
+                    <p><img src="./images/menu.png" alt="카테고리 메뉴"></p>
+                    <!-- ====================카테고리 메뉴 마우스 오버 시 활성화되는 서브메뉴 -->
+                    <div class="sub_bg">
+                        <div class="sub_contents">
+                            <ul>
+                                <li>
+                                    <h1>거실</h1>
+                                    <p>소파</p>
+                                    <p>거실장</p>
+                                    <p>거실테이블</p>
+                                    <p>중문/홈도어</p>
+                                </li>
+                                <li>
+                                    <h1>침실</h1>
+                                    <p>침대</p>
+                                    <p>매트리스</p>
+                                    <p>드레스룸</p>
+                                    <p>수납장/서랍장</p>
+                                    <p>화장대</p>
+                                </li>
+                                <li>
+                                    <h1>주방</h1>
+                                    <p>식탁</p>
+                                    <p>식탁의자</p>
+                                    <p>아일랜드/기능성식탁</p>
+                                    <p>주방수납장</p>
+                                    <p>싱크대</p>
+                                </li>
+                                <li>
+                                    <h1>아이방</h1>
+                                    <p>침대</p>
+                                    <p>공부방</p>
+                                    <p>옷장/수납장</p>
+                                    <p>의자</p>
+                                    <p>유아용품</p>
+                                </li>
+                                <li>
+                                    <h1>서재</h1>
+                                    <p>책상</p>
+                                    <p>책장</p>
+                                    <p>의자</p>
+                                    <p>서랍/수납장</p>
+                                </li>
+                                <li>
+                                    <h1>오피스</h1>
+                                    <p>컴퓨터책상/의자</p>
+                                    <p>책상/서랍장</p>
+                                    <p>스크린/파티션</p>
+                                    <p>소파/테이블</p>
+                                    <p>패키지</p>
+                                </li>
+                                <li>
+                                    <h1>홈데코</h1>
+                                    <p>패브릭</p>
+                                    <p>생활</p>
+                                    <p>주방용품</p>
+                                    <p>조명</p>
+                                    <p>수납/정리</p>
+                                </li>
+                                <li>
+                                    <h1>세계가구</h1>
+                                    <p>국가별 제품보기</p>
+                                    <p>해외 디자이너</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">정기세일</a>
+                <a href="#">이벤트</a>
+                <a href="#">리모델링</a>
+                <a href="#">공방</a>
+                <a href="#">중고가구</a>
+            </div>
+        </header>
+    </div>
+    <main>
+        <!-- ====================================1행 광고배너-->
+        <!-- 각 배너 div 묶는 큰 그룹 div, 좌우 넘김 버튼까지 묶음 -->
+        <div class="slides_wrap">
+            <div class="slides_container">
+                <div class="slide slide1">
+                    <div class="contents">
+                        <div class="title">
+                            <p>사무가구전</p>
+                            <h1>답답한 사무실,<br>책상이라도 좋아야죠</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2"></div>
+            </div>
+            <!-- 배너 이전, 다음 제어 버튼 -->
+            <a href="#" class="prev_btn"><img src="./images/arrow_prev.png" alt="이전 광고보기"></a>
+            <a href="#" class="next_btn"><img src="./images/arrow_next_100px.png" alt="다음 광고보기"></a>
+        </div>
+        <!-- ====================================2행 이달의 BEST 판매상품-->
+        <div class="best_contents">
+            <div class="title">
+                <div class="t_left">
+                    <h1 class="t_32px">이달의<br>BEST 판매상품</h1>
+                    <p class="t_sub">라바트몰 회원들이 가장 많이 산 제품!</p>
+                </div>
+                <div class="more">
+                    <span>더보기</span>
+                    <img src="./images/arrow_next_18px.png" alt="">
+                </div>
+            </div>
+            <ul class="b_product">
+                <li>
+                    <a><img src="./images/bestProduct_01.jpg" alt=""></a>
+                    <p>세렌 고급 킹사이즈 침대</p>
+                    <p class="b_price">4,980,000 원</p>
+                </li>
+                <li>
+                    <a><img src="./images/bestProduct_02.jpg" alt=""></a>
+                    <p>프레지던스 6인 테이블</p>
+                    <p class="b_price">4,980,000 원</p>
+                </li>
+                <li>
+                    <a><img src="./images/bestProduct_03.jpg" alt=""></a>
+                    <p>마가리트 패브릭 의자</p>
+                    <p class="b_price">4,980,000 원</p>
+                </li>
+                <li>
+                    <a><img src="./images/bestProduct_04.jpg" alt=""></a>
+                    <p>마가리트 4인 패브릭 소파</p>
+                    <p class="b_price">5,280,000 원</p>
+                </li>
+                <li>
+                    <a><img src="./images/bestProduct_05.jpg" alt=""></a>
+                    <p>마가리트 4인 패브릭 소파</p>
+                    <p class="b_price">5,280,000 원</p>
+                </li>
+                <li>
+                    <a><img src="./images/bestProduct_06.jpg" alt=""></a>
+                    <p>마가리트 2인 테이블</p>
+                    <p class="b_price">5,280,000 원</p>
+                </li>
+            </ul>
+        </div>
+        <!-- ====================================3행 색상별 가구-->
+        <div class="color_contents">
+            <div class="contents_wrap">
+                <h1 class="t_32px">이런 색상의 가구는 어때요?</h1>
+                <p class="t_sub">인테리어의 기본, 컬러별 가구 선택하기</p>
+                <ul>
+                    <!-- 상품 사진은 li의 background로 추가 -->
+                    <li><a>BROWN</a></li>
+                    <li><a>WHITE</a></li>
+                    <li><a>GREEN</a></li>
+                    <li><a>BEIGE</a></li>
+                    <li><a>BLACK</a></li>
+                    <li><a>BLUE</a></li>
+                    <li><a>YELLOW</a></li>
+                    <li><a>ORANGE</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ====================================4행 우리집 인테리어 뽐내기-->
+        <div class="inteiror_contents">
+            <h1 class="t_32px">우리집 인테리어 뽐내기</h1>
+            <p class="t_sub">우리집 인테리어 뽐내기</p>
+            <a href="#" class="prev_btn"><img src="./images/arrow_prev.png" alt="이전 컨텐츠 보기"></a>
+            <div class="interior_wrap">
+                <ul>
+                    <li>
+                        <a href="#"><img src="./images/rectangle_h_01.jpg" alt="#"></a>
+                        <span>호텔같은 객실 분위기</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/rectangle_h_02.jpg" alt="#"></a>
+                        <span>화이트 가구로만 꾸미기 달인</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/rectangle_h_03.jpg" alt="#"></a>
+                        <span>무채색 덕후</span>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/rectangle_h_04.jpg" alt="#"></a>
+                        <span>느낌좋은 조명</span>
+                    </li>
+                </ul>
+                <div class="scroll_bg">
+                    <div class="scroll"></div>
+                </div>
+            </div>
+            <a href="#" class="next_btn"><img src="./images/arrow_next_100px.png" alt="다음 컨텐츠 보기"></a>
+        </div>
+    </main>
+    <!-- =============================5. footer 영역 -->
+    <footer>
+        <div class="f_left">
+            <div class="f_top">
+                <ul>
+                    <li>
+                        <span>고객센터 : 1577-3332 (유료)</span>
+                        <span>제휴/대리점 개설문의 : 02-3480-8000</span>
+                    </li>
+                    <li>
+                        <a href="#">AS예약</a>
+                        <a href="#">자주하는 질문</a>
+                        <a href="#">1:1문의</a>
+                        <a href="#">매장찾기</a>
+                        <a href="#">고객의 소리</a>
+                        <a href="#">대량구매</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_btm">
+                <div class="cor">
+                    <a href="#">회사소개</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">영상정보처리기기 운영관리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">경영이념</a>
+                    <a href="#">투자정보</a>
+                    <a href="#">인재채용</a>
+                    <a href="#">제휴 및 대리점 개설안내</a>
+                </div>
+                <address>
+                    <p>(주)현대리바트 | 대표이사 윤기철 | 본사 경기도 용인시 남사읍 경기동로 316 | 서울사무소 서울특별시 강남구 압구정로 201</p>
+                    <p>
+                        개인정보관리 책임자 최재운 | 사업자등록번호 135-81-32239 | 통신판매업신고 2014-용인처인-00049 | Copyright&copy; HYUNDAI LIVART Corporation. All Rights Reserved.
+                    </p>
+                </address>
+            </div>
+        </div>
+        <div class="f_right">
+            <a href="#">
+                <span>family site</span>
+                <img src="./images/arrow_bottom.png" alt="패밀리사이트 보기">
+            </a>
+            <div class="f_right_btm">
+                <a href="#"><img src="./images/youTube.png" alt="유튜브 바로가기"></a>
+                <a href="#"><img src="./images/twitter.png" alt="트위터 바로가기"></a>
+                <a href="#"><img src="./images/instagram.png" alt="인스타그램 바로가기"></a>
+                <a href="#"><img src="./images/facebook.png" alt="페이스북 바로가기"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
