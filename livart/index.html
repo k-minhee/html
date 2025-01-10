@@ -6,9 +6,12 @@
     <title>홈 | 리바트몰</title>
     <!-- 웹폰트 연결 -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
-     <!-- 외부 스타일시트 연결 -->
-     <link href="./styles/reset.css" rel="stylesheet">
-     <link href="./styles/index.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo_livart.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo_livart.png" type="image/x-icon">
+    <!-- 외부 스타일시트 연결 -->
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/index.css" rel="stylesheet">
 </head>
 <body>
     <!-- ================================0.헤더 -->
@@ -141,6 +144,7 @@
                 </a>
                 <a href="#">정기세일</a>
                 <a href="#">이벤트</a>
+                <span></span>
                 <a href="#">리모델링</a>
                 <a href="#">공방</a>
                 <a href="#">중고가구</a>
@@ -173,10 +177,10 @@
                     <h1 class="t_32px">이달의<br>BEST 판매상품</h1>
                     <p class="t_sub">라바트몰 회원들이 가장 많이 산 제품!</p>
                 </div>
-                <div class="more">
+                <a href="#" class="more">
                     <span>더보기</span>
                     <img src="./images/arrow_next_18px.png" alt="">
-                </div>
+                </a>
             </div>
             <ul class="b_product">
                 <li>
@@ -218,21 +222,45 @@
                 <p class="t_sub">인테리어의 기본, 컬러별 가구 선택하기</p>
                 <ul>
                     <!-- 상품 사진은 li의 background로 추가 -->
-                    <li><a>BROWN</a></li>
-                    <li><a>WHITE</a></li>
-                    <li><a>GREEN</a></li>
-                    <li><a>BEIGE</a></li>
-                    <li><a>BLACK</a></li>
-                    <li><a>BLUE</a></li>
-                    <li><a>YELLOW</a></li>
-                    <li><a>ORANGE</a></li>
+                    <li>
+                        <a href="#">BROWN</a>
+                        <img src="./images/product_square01.jpg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">WHITE</a>
+                        <img src="./images/product_square02.jpg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">GREEN</a>
+                        <img src="./images/product_square03.jpg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">BEIGE</a>
+                        <img src="./images/product_square04.jpg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">BLACK</a>
+                        <img src="./images/product_square05.jpg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">BLUE</a>
+                        <img src="./images/product_square06.jpg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">YELLOW</a>
+                        <img src="./images/product_square07.jpg" alt="">
+                    </li>
+                    <li>
+                        <a href="#">ORANGE</a>
+                        <img src="./images/product_square08.jpg" alt="">
+                    </li>
                 </ul>
             </div>
         </div>
         <!-- ====================================4행 우리집 인테리어 뽐내기-->
         <div class="inteiror_contents">
             <h1 class="t_32px">우리집 인테리어 뽐내기</h1>
-            <p class="t_sub">우리집 인테리어 뽐내기</p>
+            <p class="t_sub">인테리어 마스터 회원님들의 집을 구경해보세요</p>
             <a href="#" class="prev_btn"><img src="./images/arrow_prev.png" alt="이전 컨텐츠 보기"></a>
             <div class="interior_wrap">
                 <ul>
@@ -261,55 +289,57 @@
         </div>
     </main>
     <!-- =============================5. footer 영역 -->
-    <footer>
-        <div class="f_left">
-            <div class="f_top">
-                <ul>
-                    <li>
-                        <span>고객센터 : 1577-3332 (유료)</span>
-                        <span>제휴/대리점 개설문의 : 02-3480-8000</span>
-                    </li>
-                    <li>
-                        <a href="#">AS예약</a>
-                        <a href="#">자주하는 질문</a>
-                        <a href="#">1:1문의</a>
-                        <a href="#">매장찾기</a>
-                        <a href="#">고객의 소리</a>
-                        <a href="#">대량구매</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="f_btm">
-                <div class="cor">
-                    <a href="#">회사소개</a>
-                    <a href="#">개인정보처리방침</a>
-                    <a href="#">영상정보처리기기 운영관리방침</a>
-                    <a href="#">이용약관</a>
-                    <a href="#">경영이념</a>
-                    <a href="#">투자정보</a>
-                    <a href="#">인재채용</a>
-                    <a href="#">제휴 및 대리점 개설안내</a>
+    <div class="footer_bg">
+        <footer>
+            <div class="f_left">
+                <div class="f_top">
+                    <ul>
+                        <li>
+                            <span>고객센터 : 1577-3332 (유료)</span>
+                            <span>제휴/대리점 개설문의 : 02-3480-8000</span>
+                        </li>
+                        <li>
+                            <a href="#">AS예약</a>
+                            <a href="#">자주하는 질문</a>
+                            <a href="#">1:1문의</a>
+                            <a href="#">매장찾기</a>
+                            <a href="#">고객의 소리</a>
+                            <a href="#">대량구매</a>
+                        </li>
+                    </ul>
                 </div>
-                <address>
-                    <p>(주)현대리바트 | 대표이사 윤기철 | 본사 경기도 용인시 남사읍 경기동로 316 | 서울사무소 서울특별시 강남구 압구정로 201</p>
-                    <p>
-                        개인정보관리 책임자 최재운 | 사업자등록번호 135-81-32239 | 통신판매업신고 2014-용인처인-00049 | Copyright&copy; HYUNDAI LIVART Corporation. All Rights Reserved.
-                    </p>
-                </address>
+                <div class="f_btm">
+                    <div class="cor">
+                        <a href="#">회사소개</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">영상정보처리기기 운영관리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">경영이념</a>
+                        <a href="#">투자정보</a>
+                        <a href="#">인재채용</a>
+                        <a href="#">제휴 및 대리점 개설안내</a>
+                    </div>
+                    <address>
+                        <p>(주)현대리바트 | 대표이사 윤기철 | 본사 경기도 용인시 남사읍 경기동로 316 | 서울사무소 서울특별시 강남구 압구정로 201</p>
+                        <p>
+                            개인정보관리 책임자 최재운 | 사업자등록번호 135-81-32239 | 통신판매업신고 2014-용인처인-00049 | Copyright&copy; HYUNDAI LIVART Corporation. All Rights Reserved.
+                        </p>
+                    </address>
+                </div>
             </div>
-        </div>
-        <div class="f_right">
-            <a href="#">
-                <span>family site</span>
-                <img src="./images/arrow_bottom.png" alt="패밀리사이트 보기">
-            </a>
-            <div class="f_right_btm">
-                <a href="#"><img src="./images/youTube.png" alt="유튜브 바로가기"></a>
-                <a href="#"><img src="./images/twitter.png" alt="트위터 바로가기"></a>
-                <a href="#"><img src="./images/instagram.png" alt="인스타그램 바로가기"></a>
-                <a href="#"><img src="./images/facebook.png" alt="페이스북 바로가기"></a>
+            <div class="f_right">
+                <a href="#">
+                    <span>family site</span>
+                    <img src="./images/arrow_bottom.png" alt="패밀리사이트 보기">
+                </a>
+                <div class="f_right_btm">
+                    <a href="#"><img src="./images/youTube.png" alt="유튜브 바로가기"></a>
+                    <a href="#"><img src="./images/twitter.png" alt="트위터 바로가기"></a>
+                    <a href="#"><img src="./images/instagram.png" alt="인스타그램 바로가기"></a>
+                    <a href="#"><img src="./images/facebook.png" alt="페이스북 바로가기"></a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

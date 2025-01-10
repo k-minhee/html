@@ -1,14 +1,14 @@
 /* =================================0.헤더 */
 .header_bg {}
 .header_bg header {
-    background-color: coral;
     width: 1400px; margin: 0 auto;
+    height: 168px; padding-top: 36px;
 }
 /* =================================0-1.헤더 top / 로고~마이스토어 */
 .header_bg header .h_top {
-    background-color: aqua;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
+    margin-bottom: 18px;
 }
 .header_bg header .h_top .h_top_left {
     display: flex; flex-flow: row nowrap; align-items: center;
@@ -39,15 +39,34 @@
 .header_bg header .h_top .h_top_left .search_popup ol li .rank {}
 .header_bg header .h_top .h_top_left .search_popup ol li .rank img {}
 .header_bg header .h_top .h_top_left .search_popup ol li .rank img {}
+/* =================================로그인 ~ 마이스토어 */
 .header_bg header .h_top .h_top_right {}
-.header_bg header .h_top .h_top_right > a {}
-.header_bg header .h_top .h_top_right > a img {}
+.header_bg header .h_top .h_top_right > a {
+    margin-right: 40px;
+}
+.header_bg header .h_top .h_top_right > a:last-child {margin: 0;}
+.header_bg header .h_top .h_top_right > a img {
+    position: relative; top: 5px;
+    margin-right: 8px;
+}
 .header_bg header .h_top .h_top_right > a span {}
 /* =================================0-2.헤더 bottom / 카테고리 ~ 중고가구 */
 .header_bg header .h_btm {
-    background-color: yellow;
+    display: flex; flex-flow: row nowrap; align-items: center;
 }
-.header_bg header .h_btm > a {}
+.header_bg header .h_btm > * {
+    margin-right: 22px;
+}
+.header_bg header .h_btm > a {
+    font-size: 1.13rem; letter-spacing: -0.02em;
+}
+.header_bg header .h_btm > a:first-child,
+.header_bg header .h_btm > a:nth-child(3){
+    margin-right: 36px;
+}
+.header_bg header .h_btm > span {
+    background-color: #aaa; width: 1px; height: 14px;
+}
 .header_bg header .h_btm > a p {}
 .header_bg header .h_btm > a p img {}
 /* =================================카테고리 메뉴 마우스 오버 시 활성화되는 서브메뉴 */
@@ -57,77 +76,238 @@
 .header_bg header .h_btm > a .sub_bg .sub_contents ul li {}
 .header_bg header .h_btm > a .sub_bg .sub_contents ul li h1 {}
 .header_bg header .h_btm > a .sub_bg .sub_contents ul li p {}
+/* ========================main 시작 */
+main {}
 /* =================================1행 광고배너 */
-.main {}
-.main .slides_wrap {}
-.main .slides_wrap .slides_container {}
-.main .slides_wrap .slides_container .slide1 {}
-.main .slides_wrap .slides_container .slide1 .contents {}
-.main .slides_wrap .slides_container .slide1 .contents .title {}
-.main .slides_wrap .slides_container .slide1 .contents .title p {}
-.main .slides_wrap .slides_container .slide1 .contents .title > p > h1 {}
-.main .slides_wrap .slides_container .slide1 .contents .title > p > h1 {}
-.main .slides_wrap .slides_container .slide2 {}
-.main .slides_wrap .prev_btn {}
-.main .slides_wrap .prev_btn img {}
-.main .slides_wrap .next_btn img {}
+main .slides_wrap {
+    background-color: aqua;
+    height: 650px;
+    position: relative; /* -------title, prev/next 버튼 부모 */
+}
+main .slides_wrap .slides_container {
+    background-color: lime;
+    height: 100%;
+}
+main .slides_wrap .slides_container .slide1 {
+    height: 100%;
+    background-image: url(../images/bnr_bg.jpg);
+    background-size: cover; background-position: center;
+    background-repeat: no-repeat;
+}
+main .slides_wrap .slides_container .slide1 .contents {}
+main .slides_wrap .slides_container .slide1 .contents .title {
+    position: absolute; top: 208px; left: 18%;
+}
+main .slides_wrap .slides_container .slide1 .contents .title p {
+    font-weight: 600; line-height: 1.4; color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block; padding: 7px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+main .slides_wrap .slides_container .slide1 .contents .title > h1 {
+    font-size: 3.75rem; font-weight: 500; line-height: 1.3;
+}
+main .slides_wrap .slides_container .slide2 {}
+main .slides_wrap .prev_btn,
+main .slides_wrap .next_btn {
+    position: absolute; top: 275px;
+    opacity: 0.4;
+}
+main .slides_wrap .prev_btn {left: 82px;}
+main .slides_wrap .next_btn {right: 82px;}
+main .slides_wrap .prev_btn img {}
+main .slides_wrap .next_btn img {}
 /* =================================컨텐츠 영역 공통요소 */
-.main .t_32px {}
-.main .t_sub {}
+main .t_32px {
+    font-size: 2rem; font-weight: 600;
+    line-height: 1.3; letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+main .t_sub {
+    font-size: 1.13rem; letter-spacing: -0.02em;
+    color: #aaa;
+}
 /* =================================2행 이달의 BEST 판매상품 */
-.main .best_contents {}
-.main .best_contents .title {}
-.main .best_contents .title .t_left {}
-.main .best_contents .title .t_left .t_32px {}
-.main .best_contents .title .t_left .t_sub {}
-.main .best_contents .title .more {}
-.main .best_contents .title .more > span {}
-.main .best_contents .title .more > img {}
-.main .best_contents .b_product {}
-.main .best_contents .b_product li {}
-.main .best_contents .b_product li a {}
-.main .best_contents .b_product li a img {}
-.main .best_contents .b_product li .b_price {}
+main .best_contents {
+    padding: 100px 0;
+    width: 1400px; margin: 0 auto;
+}
+main .best_contents .title {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: end;
+}
+main .best_contents .title .t_left {}
+main .best_contents .title .t_left .t_32px {}
+main .best_contents .title .t_left .t_sub {}
+main .best_contents .title .more {}
+main .best_contents .title .more > span {}
+main .best_contents .title .more > img {
+    position: relative; top: 3px;
+}
+main .best_contents .b_product {
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+}
+main .best_contents .b_product li {
+    width: calc((100% - (19px * 2)) / 3);
+    text-align: center;
+}
+main .best_contents .b_product li:nth-child(1),
+main .best_contents .b_product li:nth-child(2),
+main .best_contents .b_product li:nth-child(3) {margin-bottom: 32px;}
+main .best_contents .b_product li a {}
+main .best_contents .b_product li a img {
+    border-radius: 8px;
+}
+main .best_contents .b_product li p {
+    margin-top: 24px;
+}
+main .best_contents .b_product li .b_price {
+    margin-top: 16px;
+    font-size: 1.13rem; font-weight: 600; letter-spacing: -0.02em;
+}
 /* ================================3행 색상별 가구 */
-.main .color_contents {}
-.main .color_contents .contents_wrap {}
-.main .color_contents .contents_wrap .t_32px {}
-.main .color_contents .contents_wrap .t_sub {}
-.main .color_contents .contents_wrap > ul {}
-.main .color_contents .contents_wrap > ul li {}
-.main .color_contents .contents_wrap > ul li a {}
+main .color_contents {
+    background-color: #F5F5F5;
+}
+main .color_contents .contents_wrap {
+    padding: 100px 0;
+    width: 1400px; margin: 0 auto;
+}
+main .color_contents .contents_wrap .t_32px,
+main .color_contents .contents_wrap .t_sub {text-align: center;}
+main .color_contents .contents_wrap .t_sub {margin-bottom: 50px;}
+main .color_contents .contents_wrap ul {
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+}
+main .color_contents .contents_wrap ul li {
+    width: calc((100% - (18px * 3)) / 4);
+    border-radius: 8px; overflow: hidden;
+    position: relative;
+}
+main .color_contents .contents_wrap ul li:after {
+    content: '';
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+main .color_contents .contents_wrap > ul li:nth-child(1),
+main .color_contents .contents_wrap > ul li:nth-child(2),
+main .color_contents .contents_wrap > ul li:nth-child(3),
+main .color_contents .contents_wrap > ul li:nth-child(4) {
+    margin-bottom: 32px;
+}
+main .color_contents .contents_wrap > ul li a {
+    position: absolute; left: 0; top: 50%;
+    width: 100%; text-align: center;
+    font-size: 1.63rem; letter-spacing: -0.02em;
+    color: #fff;
+    z-index: 100;
+}
+main .color_contents .contents_wrap > ul li img {}
 /* ================================4행 우리집 인테리어 뽐내기 */
-.main .interiror_contents {}
-.main .interiror_contents .t_32px {}
-.main .interiror_contents .t_sub {}
-.main .interiror_contents .prev_btn {}
-.main .interiror_contents .prev_btn img {}
-.main .interiror_contents .interior_wrap {}
-.main .interiror_contents .interior_wrap > ul {}
-.main .interiror_contents .interior_wrap > ul li {}
-.main .interiror_contents .interior_wrap > ul li a {}
-.main .interiror_contents .interior_wrap > ul li a img {}
-.main .interiror_contents .interior_wrap > ul li span {}
-.main .interiror_contents .interior_wrap .scroll_bg {}
-.main .interiror_contents .interior_wrap .scroll_bg .scroll {}
-.main .interiror_contents .next_btn {}
-.main .interiror_contents .next_btn img {}
+main .inteiror_contents {
+    position: relative;
+    padding: 100px 0;
+}
+main .inteiror_contents .t_32px {text-align: center;}
+main .inteiror_contents .t_sub {
+    text-align: center;
+    margin-bottom: 50px;
+}
+main .inteiror_contents .prev_btn img {}
+main .inteiror_contents .interior_wrap {
+    width: 1400px; margin: 0 auto;
+}
+main .inteiror_contents .interior_wrap > ul {
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+}
+main .inteiror_contents .interior_wrap > ul li {
+    width: clac((100% - (19px * 3)) / 4);
+    border-radius: 8px; overflow: hidden;
+}
+main .inteiror_contents .interior_wrap > ul li a {}
+main .inteiror_contents .interior_wrap > ul li a img {}
+main .inteiror_contents .interior_wrap > ul li span {
+    margin-top: 24px; text-align: center;
+    display: block;
+    font-size: 1.13rem; letter-spacing: -0.02em;
+}
+main .inteiror_contents .interior_wrap .scroll_bg {
+    margin-top: 50px;
+    background-color: #d9d9d9; width: 100%;
+    height: 2px;
+}
+main .inteiror_contents .interior_wrap .scroll_bg .scroll {
+    height: 100%; width: 240px; background-color: #000;
+}
+main .inteiror_contents .next_btn,
+main .inteiror_contents .prev_btn {
+    position: absolute; top: 409px;
+}
+main .inteiror_contents .prev_btn {left: 80px; opacity: 0.4;}
+main .inteiror_contents .next_btn {right: 80px;}
+main .inteiror_contents .next_btn img {}
 /* ================================5. footer 영역 */
-.footer {}
-.footer .f_left {}
-.footer .f_left .f_top {}
-.footer .f_left .f_top ul {}
-.footer .f_left .f_top ul li {}
-.footer .f_left .f_top ul li span {}
-.footer .f_left .f_top ul li a {}
-.footer .f_left .f_btm {}
-.footer .f_left .f_btm .cor {}
-.footer .f_left .f_btm .cor a {}
-.footer .f_left .f_btm address {}
-.footer .f_left .f_btm address p {}
-.footer .f_right > a {}
-.footer .f_right > a span {}
-.footer .f_right > a img {}
-.footer .f_right .f_right_btm {}
-.footer .f_right .f_right_btm > a {}
-.footer .f_right .f_right_btm > a img {}
+.footer_bg {
+    margin-top: 100px;
+    background-color: #F5F5F5;
+    padding: 80px;
+}
+.footer_bg footer {
+    width: 1400px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.footer_bg footer .f_left {}
+.footer_bg footer .f_left .f_top {margin-bottom: 30px;}
+.footer_bg footer .f_left .f_top ul {}
+.footer_bg footer .f_left .f_top ul li {}
+.footer_bg footer .f_left .f_top ul li:first-child {margin-bottom: 11px;}
+.footer_bg footer .f_left .f_top ul li span,
+.footer_bg footer .f_left .f_top ul li a {
+    font-size: 0.75rem;
+}
+.footer_bg footer .f_left .f_top ul li span:last-child {margin: 0;}
+.footer_bg footer .f_left .f_top ul li span {margin-right: 40px;}
+.footer_bg footer .f_left .f_top ul li a:last-child {margin: 0;}
+.footer_bg footer .f_left .f_top ul li a {margin-right: 22px;}
+.footer_bg footer .f_left .f_btm {}
+.footer_bg footer .f_left .f_btm .cor {
+    margin-bottom: 12px;
+}
+.footer_bg footer .f_left .f_btm .cor a:last-child {margin: 0;}
+.footer_bg footer .f_left .f_btm .cor a {
+    font-size: 0.75rem;
+    margin-right: 20px;
+}
+.footer_bg footer .f_left .f_btm address {}
+.footer_bg footer .f_left .f_btm address p {
+    font-size: 0.75rem; line-height: 1.8;
+    color: #555;
+}
+.footer_bg footer .f_right {
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.footer_bg footer .f_right > a {
+    padding: 10px 17px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    text-align: center;
+}
+.footer_bg footer .f_right > a span {margin-right: 8px;}
+.footer_bg footer .f_right > a img {
+    position: relative; top: 2px;
+}
+.footer_bg footer .f_right .f_right_btm {}
+.footer_bg footer .f_right .f_right_btm > a {}
+.footer_bg footer .f_right .f_right_btm > a img {}
