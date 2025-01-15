@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적정체중  계산기 | 과제</title>
+    <!-- 웹 폰트 연결 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- script 파일 연결 -->
+    <script src="./script/index.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <h1 class="title">적정체중 구하기</h1>
+        <div class="contents_wrap">
+            <p>본인의 키를 입력하세요</p>
+            <input type="number" name="height" id="height" placeholder="키 입력칸 (cm)">
+            <p>몸무게를 입력하세요</p>
+            <input type="number" name="weight" id="weight" placeholder="몸무게 입력칸 (kg)">
+            <button type="button" class="btn">결과보기</button>
+            <p>당신의 현재 몸상태는?</p>
+            <div class="result">
+                <p>적정체중은 <span class=goals><!-- js --></span>kg이며, </p>
+                <p><span class="normal_w"><!-- js --></span>kg 초과되셨습니다. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
