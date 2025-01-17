@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탄생화</title>
+    <!-- font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+    <!-- 외부 스타일시트 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- js -->
+    <script src="./script/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <input type="number" name="user_y" id="user_y" placeholder="태어난 연도">
+        <span>년</span>
+        <input type="number" name="user_m" id="user_m" placeholder="태어난 달">
+        <span>월</span>
+        <input type="number" name="user_d" id="user_d" placeholder="태어난 날짜">
+        <span>일</span>
+        <button type="button" class="btn">탄생화와 꽃말은?</button>
+        <p class="text">
+            <span class="month"><!-- 월 -->?</span>
+            월의 탄생화는
+            <span class="flower"><!-- 꽃 이름 -->?</span>
+            꽃말은
+            <span class="meaning"><!-- 꽃말 -->?</span>
+            입니다.
+        </p>
+    </main>
+</body>
+</html>

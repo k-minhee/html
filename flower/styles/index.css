@@ -1,0 +1,45 @@
+main {
+    background-color: #ffabab;
+    width: 600px; margin: 100px auto 0;
+    padding: 30px; border-radius: 30px;
+}
+main input {
+    background-color: #f5f5f5;
+    width: calc((100% - 100px) / 3);
+    padding: 12px; border-radius: 8px;
+}
+main input::placeholder {
+    font-size: 0.88rem; letter-spacing: -0.02em;
+    color: #bdbdbd;
+}
+main > span {
+    margin: 0 4px ;
+    color: #fff;
+}
+main #user_y {}
+main #user_m {}
+main #user_d {}
+main .btn {
+    display: block; width: 100%;
+    margin: 20px 0 0; border-radius: 8px;
+    background-color: #ff5e5e;
+    padding: 16px 0;
+    font-size: 1.13rem; font-weight: 500;
+    color: #fff;
+}
+main .btn:hover {background-color: #e65454;}
+main .text {
+    margin-top: 36px;
+    background-color: #f5f5f55d;
+    letter-spacing: -0.02em; font-weight: 500;
+    padding: 20px; border-radius: 12px;
+    color: #4e3333;
+}
+main .text > span {
+    font-size: 1.13rem;
+    margin: 0 2px; font-weight: 600;
+    color: #4e3333;
+}
+main .text .month {}
+main .text .flower {}
+main .text .meaning {}
