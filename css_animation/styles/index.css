@@ -1,0 +1,177 @@
+.btn1 {
+    background:#3498db; color: #fff;
+    border-radius: 5px; font-size: 1.2rem;
+    padding: 15px 30px;
+    /* 변경되는 효과(hover)를 서서히 변경되는 애니메이션 효과로 주고싶을 때 */
+    transition: background 0.3s, font-size 0.5s 0.8s; /* 0.3 ~ 0.5s을 많이 사용 */
+}
+.btn1:hover {background: #b6cf27; font-size: 0.8rem;}
+.btn2 {
+    background: #b6cf27; color: #ffffff;
+    width: 200px; height: 200px; margin-left: 30px;
+    font-size: 1.5rem; border-radius: 50%;
+    transition: background 0.7s, font-size 0.3s, width 0.5s, height 0.5s;
+}
+.btn2:hover {
+    width: 190px; height: 190px; background: #8969ff;
+    font-weight: 300; font-size: 1.43rem;
+}
+.btn3 {
+    width: 200px; height: 100px; color: #fff;
+    font-size: 1.2rem; font-weight: 700;
+    border-radius: 10px;
+    background: url(https://i.pinimg.com/736x/c0/56/ba/c056bafdd8b3525a692993a2b047c94c.jpg);
+    background-size: 100% auto; background-repeat: no-repeat;
+    background-position:  50% 60%;
+    transition:background-position 1.5s, background-size 1s, background 1s;
+}
+.btn3:hover {
+    background: url(https://i.pinimg.com/736x/94/a0/1e/94a01e40de7077eacef0dbc9d860a2d5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 120% auto;
+}
+.btn4 {
+    background: url(https://i.pinimg.com/736x/8c/19/d5/8c19d5dec4861a212fb7da7b7e39003b.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 300px; height: 100px;
+    color: #ecf1ec; font-size: 1.88rem;
+    font-weight: 200;
+    transition: background 1s, height 0.7s, background-size 3s, width 0.8s;
+}
+.btn4:hover {
+    background: url(https://i.pinimg.com/736x/38/8b/51/388b5106580d3ebe7204f8459727cc58.jpg);
+    width: 600px; height: 200px;
+    background-position: 60% 95%;
+    background-size: 120% auto; background-repeat: no-repeat;
+}
+.gnb {max-width: 600px; display: flex;}
+.gnb a { /* 공통a */ display: block; width: 100%; line-height: 60px;}
+.gnb > li {
+    width: calc(100% / 2); text-align: center;
+    position: relative;
+}
+.gnb > li > a {
+    background-color: #222; color: #fff;
+}
+.gnb > li > .sub {
+    position: absolute; width: 100%;
+    left: 0; top: 100%;
+    height: 0; overflow: hidden;
+    transition: height 0.3s;
+}
+.gnb > li > .sub li {border-bottom: 1px solid #ddd;}
+.gnb > li > .sub li a {
+    background-color: #eee; color: #222;
+}
+/* hover - menu */
+.gnb > li:hover .sub {
+    height: 180px;
+}
+.gnb > li .sub a:hover {
+    background-color: #363636; color: #eee;
+}
+.bnr {
+    height: 500px;
+    background-image: url(https://i.pinimg.com/736x/86/f0/6e/86f06efcec79f003fe2968dac7f2d948.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.gnb2 {display: flex;}
+.gnb2 a {display: block; width: 100%; text-align: center; line-height: 50px;}
+.gnb2 > li {width: calc(100% / 2); position: relative;}
+.gnb2 > li > a {
+    background-color: #111; color: #fff;
+}
+.gnb2 > li > .sub {
+    position: absolute; width: 100%; left: 0; top: 100%;
+    background-color: rgba(255,255,255,0.2);
+    height: 0; overflow: hidden;
+    transition: height 0.7s;
+}
+.gnb2 > li > .sub li {}
+.gnb2 > li > .sub li a {
+    transition: line-height 0.5s;
+}
+.bnr2 {
+    height: 500px;
+    background-image: url(https://i.pinimg.com/736x/41/03/55/41035534b5ca34837c8391ffff672cfe.jpg);
+    background-size: cover; background-position: center;
+}
+/* hover */
+.gnb2 > li:hover .sub {height: max-content;}
+.gnb2 > li .sub li a:hover {
+    background-color: rgba(0,0,0,0.5); color: #fff;
+    line-height: 75px; font-size: 1.13rem;
+}
+.btn5 {
+    width: 300px; height: 150px; border-radius: 10px;
+    background: linear-gradient(90deg, #3498db, #fff, #3498db);
+    background-size: 400%;
+    background-position: 0 0;
+    transition: background-position 1s;
+}
+.btn5:hover {
+    background-position: 100% 0;
+}
+.btn6 {
+    width: 300px; height: 150px; border-radius: 10px;
+    background: linear-gradient(130deg, #346edb, #2af3a6, #4534db);
+    background-size: 200%;
+    background-position: 0 0;
+    transition: background-position 0.8s, font-size 1s, color 0.5s;
+}
+.btn6:hover {
+    background-position: 100% 20%;
+    color: #fff; font-size: 1.8rem;
+}
+/* 글자 애니메이션 + Gradient */
+h1 {
+    font-size: 4rem; font-weight: 900;
+    letter-spacing: -0.04em;
+    background: linear-gradient(90deg, #4534db, #0edd8e, #3498db, #4534db);
+    width: max-content;
+    /* 글자 안에서만 Gradient 적용되게 만들기 */
+    color: transparent;
+    -webkit-background-clip: text;
+    /* 애니메이션 준비 */
+    background-size: 400%; background-position: 100% 0;
+    transition: background-position 3s;
+}
+h1:hover {
+    background-position: 0 0;
+}
+h2 {
+    font-size: 2rem; letter-spacing: -0.03em;
+    font-weight: 600;
+    background: linear-gradient(90deg, #3498db, #8969ff, #346edb, #34db7f);
+    width: max-content; height: 40px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 400%; background-position: 0 0;
+    transition: background-position 2s;
+}
+h2:hover {
+    background-position: 100% 0;
+}
+/* 이동 애니메이션(가속도 활용) */
+.box {
+    width: 500px; height: 500px; border: 2px solid #222;
+    position: relative;
+}
+.box p {
+    width: 100px; height: 100px; background: #346edb;
+    border-radius: 50%;
+    position: absolute; left: 0; top: 0;
+    transition: all 0.5s cubic-bezier(0.81, 0.02, 1, 0.39);
+    /*
+        가속도 종류와 뜻
+        1. ease(기본값) : 점점 느리게
+        2. linear : 일정한 속도
+        3. ease-in : 천천히 시작해서 점점 빨라짐
+        4. ease-out : 빠르게 시작해서 점점 느려짐
+        5. cubic-bezier(가속도 곡선 0~1값 사이) 커스텀 애니메이션 속도
+    */
+}
+.box:hover p{left: 80%; top: 80%;}
