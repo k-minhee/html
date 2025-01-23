@@ -40,16 +40,48 @@ console.log(newsList, newsItems, itemsHeight, currentIndex);
 const newsTimer = setInterval(()=>{
     currentIndex++;
     newsList.style.transform = `translateY(-${itemsHeight*currentIndex}px)`
-    newsList.style.transition = 'transform 1s ease'
+    newsList.style.transition = 'transform 0.5s ease'
     
     // 모든 list가 이동했을 때 초기화하는 조건문과 setTimeout
     if(currentIndex == newsItems.length){
-        console.log('초기화 조건문 실행')
+        // console.log('초기화 조건문 실행')
         setTimeout(()=>{
             currentIndex = 0;
             newsList.style.transition = 'none';
             newsList.style.transform = 'translateY(0)'
-        }, 1000) /* 트랜지션 시간과 동일하게 설정 */
+        }, 500) /* 트랜지션 시간과 동일하게 설정 */
     }
-
 }, 1000)
+
+/* 무한스크롤 동작을 위한 원본 공지사항 복제 후 리스트 끝에 추가하기 */
+/* newsTimer 안에 만들면 리스트가 계속 추가되므로 바깥에 놔둬야 함 */
+for(let i of newsItems){
+    const clone = i.cloneNode(true); // (true)는 클론노드를 자식자손까지 포함하겠다.
+    newsList.appendChild(clone);
+}
+/* =====================================2번째 실습+연습 */
+const newsList2 = document.querySelector('.news_container2 #list');
+const newsItems2 = document.querySelectorAll('.news_container2 #list li');
+const itemWidth = newsItems2[0].offsetWidth;
+let currentIndex2 = 0;
+console.log(newsList2, newsItems2, itemWidth, currentIndex2);
+
+const newsTimer2 = setInterval(()=> {
+    currentIndex2++;
+    newsList2.style.transform = `translateX(-${itemWidth*currentIndex2}px)`
+    newsList2.style.transition = 'transform 0.5s ease'
+
+    if(currentIndex2 == newsItems2.length){
+        // console.log('초기화 조건문 실행2')
+        setTimeout(()=>{
+            currentIndex2 = 0;
+            newsList2.style.transition = 'none';
+            newsList2.style.transform = 'translateX(0)'
+        },500)
+    }
+}, 1000)
+
+for(let i of newsItems2){
+    const clone2 = i.cloneNode(true);
+    newsList2.appendChild(clone2);
+}

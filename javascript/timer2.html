@@ -23,6 +23,23 @@
         .news_container #list li {
             line-height: 40px; padding: 0 10px;
         }
+        /* ======================================container2 */
+        .news_container2 {
+            width: 500px; height: 40px;
+            overflow: hidden; /* #list가 news_container 안에서만 보이게 */
+            border: 1px solid #ccc; border-radius: 5px;
+            margin: 50px;
+        }
+        .news_container2 #list {
+            width: max-content;
+            background-color: #eee;
+            transform: translateX(0);
+            display: flex;
+        }
+        .news_container2 #list li {
+            width: 500px;
+            line-height: 40px; padding: 0 10px;
+        }
         
     </style>
 </head>
@@ -35,7 +52,16 @@
             <li>공지사항 2 : 서버 점검 일정이 확정되었습니다.</li>
             <li>공지사항 3 : 이벤트가 곧 시작됩니다. 많은 참여바랍니다.</li>
             <li>공지사항 4 : 고객 지원 팀이 강화되었습니다.</li>
+            <!-- <li>공지사항 1 : 새로운 업데이트가 출시되었습니다.</li> -->
+        </ul>
+    </div>
+    <hr>
+    <div class="news_container2">
+        <ul id="list">
             <li>공지사항 1 : 새로운 업데이트가 출시되었습니다.</li>
+            <li>공지사항 2 : 서버 점검 일정이 확정되었습니다.</li>
+            <li>공지사항 3 : 이벤트가 곧 시작됩니다. 많은 참여바랍니다.</li>
+            <li>공지사항 4 : 고객 지원 팀이 강화되었습니다.</li>
         </ul>
     </div>
 </body>
