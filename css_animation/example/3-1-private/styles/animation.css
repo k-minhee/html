@@ -1,0 +1,12 @@
+@keyframes mouse {
+    from {transform: translateY(0);}
+    to {transform: translateY(30px);}
+}
+@keyframes wheel {
+    from {rotate: 0;}
+    to {rotate: 360deg;}
+}
+@keyframes bgMove {
+    0% {background-position-x: 0px;}
+    100% {background-position-x: 1000px;}
+}

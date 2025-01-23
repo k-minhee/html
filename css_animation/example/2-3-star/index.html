@@ -40,6 +40,9 @@
             margin-right:10px; overflow:hidden; position:relative;
             border-radius:10px; 
         }
+        /* 각각의 메뉴 호버 시 radius 조절*/
+        .menu_contents .menu a:hover,
+        .menu_contents .menu a:hover img {border-radius: 50%;}
         .menu_contents .menu a:last-child {margin-right:0}
         .menu_contents .menu a img {width:100%;}
         /* 커피정보 */
@@ -48,12 +51,20 @@
             color:#fff;
             width:100%; height:100%; display:block;
             position:absolute; left:0; top:0;
-            text-align:center;
+            text-align:center; opacity: 0;
+            transition: opacity 1s;
         }
+        /* 글자 나타나게 하기 */
+        .menu_contents .menu a:hover .info{opacity: 1;}
         .menu_contents .menu .info span:first-child {padding-top:40%;}
         .menu_contents .menu .info span {
-            display:block; font-weight: 600;
-            line-height:1.5;
+            display:block; font-weight: 600; opacity: 0;
+            line-height:1.5; color: #fff;
+            transition: opacity 1s;
+        }
+        /* 호버 글자 트랜지션 */
+        .menu_contents .menu a:hover .info span{
+            opacity: 1;
         }
         /* active class + animation */
         .active {font-weight:800;}
