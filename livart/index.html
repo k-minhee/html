@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
     <!-- 외부 스타일시트 연결 -->
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/common.css">
 </head>
 <body>
     <!-- ================================0.헤더 -->
@@ -21,40 +22,7 @@
             <div class="h_top">
                 <div class="h_top_left">
                     <h1><a href="#"><img src="./images/logo_livart.png" alt="livart 홈"></a></h1>
-                    <form action="#" method="get">
-                        <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요">
-                    </form>
-                    <!-- ====================검색창 클릭 시 활성화되는 영역 -->
-                    <div class="search_popup">
-                        <h1>인기 검색어</h1>
-                        <ol>
-                            <li>
-                                <p class="num">1</p>
-                                <p class="p_name">소파</p>
-                                <p class="rank"><img src="./images/rank_up.png" alt="순위상승"></p>
-                            </li>
-                            <li>
-                                <p class="num">2</p>
-                                <p class="p_name">의자</p>
-                                <p class="rank"><img src="./images/rank_down.png" alt="순위하락"></p>
-                            </li>
-                            <li>
-                                <p class="num">3</p>
-                                <p class="p_name">아이방</p>
-                                <p class="rank"><img src="./images/rank_down.png" alt="순위하락"></p>
-                            </li>
-                            <li>
-                                <p class="num">4</p>
-                                <p class="p_name">주방 아일랜드 키친</p>
-                                <p class="rank"><img src="./images/rank_up.png" alt="순위상승"></p>
-                            </li>
-                            <li>
-                                <p class="num">5</p>
-                                <p class="p_name">이달의 행사 상품</p>
-                                <p class="rank"><img src="./images/rank_up.png" alt="순위상승"></p>
-                            </li>
-                        </ol>
-                    </div>
+                    <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요">
                 </div>
                 <div class="h_top_right">
                     <a href="#">
@@ -72,75 +40,9 @@
                 </div>
             </div>
             <!-- ========================0-2.헤더 bottom / 카테고리 ~ 중고가구 -->
-            <div class="h_btm">
+            <nav>
                 <a href="#">
                     <p><img src="./images/menu.png" alt="카테고리 메뉴"></p>
-                    <!-- ====================카테고리 메뉴 마우스 오버 시 활성화되는 서브메뉴 -->
-                    <div class="sub_bg">
-                        <div class="sub_contents">
-                            <ul>
-                                <li>
-                                    <h1>거실</h1>
-                                    <p>소파</p>
-                                    <p>거실장</p>
-                                    <p>거실테이블</p>
-                                    <p>중문/홈도어</p>
-                                </li>
-                                <li>
-                                    <h1>침실</h1>
-                                    <p>침대</p>
-                                    <p>매트리스</p>
-                                    <p>드레스룸</p>
-                                    <p>수납장/서랍장</p>
-                                    <p>화장대</p>
-                                </li>
-                                <li>
-                                    <h1>주방</h1>
-                                    <p>식탁</p>
-                                    <p>식탁의자</p>
-                                    <p>아일랜드/기능성식탁</p>
-                                    <p>주방수납장</p>
-                                    <p>싱크대</p>
-                                </li>
-                                <li>
-                                    <h1>아이방</h1>
-                                    <p>침대</p>
-                                    <p>공부방</p>
-                                    <p>옷장/수납장</p>
-                                    <p>의자</p>
-                                    <p>유아용품</p>
-                                </li>
-                                <li>
-                                    <h1>서재</h1>
-                                    <p>책상</p>
-                                    <p>책장</p>
-                                    <p>의자</p>
-                                    <p>서랍/수납장</p>
-                                </li>
-                                <li>
-                                    <h1>오피스</h1>
-                                    <p>컴퓨터책상/의자</p>
-                                    <p>책상/서랍장</p>
-                                    <p>스크린/파티션</p>
-                                    <p>소파/테이블</p>
-                                    <p>패키지</p>
-                                </li>
-                                <li>
-                                    <h1>홈데코</h1>
-                                    <p>패브릭</p>
-                                    <p>생활</p>
-                                    <p>주방용품</p>
-                                    <p>조명</p>
-                                    <p>수납/정리</p>
-                                </li>
-                                <li>
-                                    <h1>세계가구</h1>
-                                    <p>국가별 제품보기</p>
-                                    <p>해외 디자이너</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </a>
                 <a href="#">정기세일</a>
                 <a href="#">이벤트</a>
@@ -148,7 +50,7 @@
                 <a href="#">리모델링</a>
                 <a href="#">공방</a>
                 <a href="#">중고가구</a>
-            </div>
+            </nav>
         </header>
     </div>
     <main>

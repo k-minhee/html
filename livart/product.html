@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지 | 리바트몰</title>
+    <!-- 웹폰트 연결 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo_livart.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo_livart.png" type="image/x-icon">
+    <!-- 외부 스타일시트 연결 -->
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/product.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/common.css">
+</head>
+<body>
+    <!-- ================================0.헤더 -->
+    <div class="header_bg">
+        <header>
+            <!-- ========================0-1.헤더 top / 로고~마이스토어 -->
+            <div class="h_top">
+                <div class="h_top_left">
+                    <h1><a href="#"><img src="./images/logo_livart.png" alt="livart 홈"></a></h1>
+                    <input type="text" name="user_search" id="user_search" placeholder="검색어를 입력하세요">
+                </div>
+                <div class="h_top_right">
+                    <a href="#">
+                        <img src="./images/login.png" alt="#">
+                        <span>로그인</span>
+                    </a>
+                    <a href="#">
+                        <img src="./images/join.png" alt="#">
+                        <span>회원가입</span>
+                    </a>
+                    <a href="#">
+                        <img src="./images/shop.png" alt="#">
+                        <span>마이스토어</span>
+                    </a>
+                </div>
+            </div>
+            <!-- ========================0-2.헤더 bottom / 카테고리 ~ 중고가구 -->
+            <nav>
+                <a href="#">
+                    <p><img src="./images/menu.png" alt="카테고리 메뉴"></p>
+                </a>
+                <a href="#">정기세일</a>
+                <a href="#">이벤트</a>
+                <span></span>
+                <a href="#">리모델링</a>
+                <a href="#">공방</a>
+                <a href="#">중고가구</a>
+            </nav>
+        </header>
+    </div>
+    <!-- =============================메인 시작 -->
+    <main>
+        <div class="left_wrap">
+            <p class="thum_big"><img src="./images/thum_big.jpg" alt=""></p>
+            <ul>
+                <li class="active"><img src="./images/thum_001.jpg" alt=""></li>
+                <li><img src="./images/thum_002.jpg" alt=""></li>
+                <li><img src="./images/thum_003.jpg" alt=""></li>
+                <li><img src="./images/thum_004.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="right_wrap">
+            <p class="best_tag">BEST</p>
+            <h1>커리어 거실 소파</h1>
+            <div class="price">
+                <del>225,000원</del>
+                <div class="price_btm">
+                    <div class="final_price">
+                        <em>64%</em>
+                        <span>225,000원</span>
+                    </div>
+                    <a href="#" class="coupon">
+                        <span>쿠폰 다운로드</span>
+                        <img src="./images/arrow_next_18px.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="ad">
+                <div class="left_ad">
+                    <img src="./images/credit_card.png" alt="">
+                    <span>하나카드, 최대 10만원 <em>즉시할인</em></span>
+                </div>
+                <a href="#" class="right_ad">
+                    <span>할인받기</span>
+                    <img src="./images/arrow_next_18px.png" alt="">
+                </a>
+            </div>
+            <ul class="delivery">
+                <li>
+                    <p class="d_title">배송정보</p>
+                    <p class="d_info">무료/직접배송</p>
+                </li>
+                <li>
+                    <p class="d_title">상품코드</p>
+                    <p class="d_info">P20012386</p>
+                </li>
+            </ul>
+            <div class="select_contents">
+                <select name="color" id="color">
+                    <option value="">색상을 선택해주세요.</option>
+                    <option value="brown">브라운</option>
+                    <option value="mint">민트</option>
+                    <option value="grey">그레이</option>
+                </select>
+                <select name="add" id="add">
+                    <option value="">추가상품을 선택해주세요.</option>
+                    <option value="sofa_table">소파 협탁</option>
+                    <option value="cushion">쿠션</option>
+                    <option value="mini_sofa">미니 소파</option>
+                </select>
+            </div>
+            <div class="order">
+                <div class="name">
+                    <p>커리어 거실 소파</p>
+                    <div class="product_num">
+                        <a href="#" class="minus"><img src="./images/remove.png" alt="상품 1개 추가"></a>
+                        <em class="num">1개</em>
+                        <a href="#" class="plus"><img src="./images/add.png" alt="상품 1개 빼기"></a>
+                    </div>
+                </div>
+                <div class="order_price">
+                    <span>주문금액</span>
+                    <em>0원</em>
+                </div>
+            </div>
+            <div class="order_btn">
+                <a href="#" class="heart"><img src="./images/heart_off.png" alt="찜하기"></a>
+                <button type="button" id="cart">장바구니</button>
+                <button type="button" id="buy">바로 구매</button>
+            </div>
+        </div>
+    </main>
+</body>

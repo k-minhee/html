@@ -1,0 +1,164 @@
+main {
+    padding-bottom: 50px;
+    width: 1400px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+}
+/* =========================왼쪽 이미지 영역 */
+main .left_wrap {
+    width: calc(100% - 560px - 32px);
+}
+main .left_wrap .thum_big {width: 100%;}
+main .left_wrap .thum_big img {}
+main .left_wrap ul {
+    margin-top: 12px;
+    display: flex; justify-content: space-between;
+}
+main .left_wrap ul li {
+    width: calc((100% - (8px * 3)) / 4);
+}
+main .left_wrap ul li img {width: 100%;}
+main .left_wrap ul .active {
+    border: 4px solid #111; border-radius: 4px;
+    overflow: hidden;
+}
+/* =========================오른쪽 상품정보 영역 */
+main .right_wrap {width: 560px;}
+main .right_wrap .best_tag {
+    font-size: 0.86rem; letter-spacing: -0.02em;
+    background-color: #111; display: inline-block;
+    color: #fff; padding: 8px 10px; border-radius: 4px;
+    margin-bottom: 24px;
+}
+main .right_wrap h1 {
+    font-size: 2rem; font-weight: 600;  line-height: 1.3; letter-spacing: -0.02em;
+    margin-bottom: 36px;
+}
+/* 상품가격 */
+main .right_wrap .price {}
+main .right_wrap .price del {
+    font-size: 1.25rem; letter-spacing: -0.02em;
+    display: block;
+    color: #ccc; margin-bottom: 6px;
+}
+main .right_wrap .price .price_btm {
+    display: flex; justify-content: space-between;
+}
+main .right_wrap .price .price_btm .final_price {}
+main .right_wrap .price .price_btm .final_price em {
+    font-size: 1.63rem; letter-spacing: -0.02em; font-weight: 600;
+    color: #ff3a3a; margin-right: 10px;
+}
+main .right_wrap .price .price_btm .final_price span {
+    font-size: 1.63rem; letter-spacing: -0.02em; font-weight: 600;
+}
+main .right_wrap .price .price_btm .coupon {
+    background-color: #f5f5f5; padding: 8px 10px;
+    border-radius: 4px; margin-bottom: 36px;
+    display: flex; align-items: center;
+}
+main .right_wrap .price .price_btm .coupon span {
+    font-size: 0.86rem; letter-spacing: -0.02em;
+    margin-right: 6px;
+}
+main .right_wrap .price .price_btm .coupon img {
+}
+/* 하나카드 광고 */
+main .right_wrap .ad {
+    background-color: #f5f5f5;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px; border-radius: 4px;
+    margin-bottom: 36px;
+}
+main .right_wrap .ad .left_ad {
+    display: flex; align-items: center;
+}
+main .right_wrap .ad .left_ad img {margin-right: 16px;}
+main .right_wrap .ad .left_ad span {
+    font-size: 1.13rem; font-weight: 600; letter-spacing: -0.02em;
+}
+main .right_wrap .ad .left_ad span em {
+    font-size: 1.13rem; font-weight: 600; letter-spacing: -0.02em;
+    color: #0048ff;
+}
+main .right_wrap .ad .right_ad {display: flex; align-items: center;}
+main .right_wrap .ad .right_ad span {margin-right: 2px; color: #828282;}
+main .right_wrap .ad .right_ad img {opacity: 0.3;}
+/* 배송 관련 */
+main .right_wrap .delivery {margin-bottom: 36px;}
+main .right_wrap .delivery li {display: flex;}
+main .right_wrap .delivery li:first-child {margin-bottom: 20px;}
+main .right_wrap .delivery li .d_title {
+    letter-spacing: -0.02em; font-weight: 600;
+    width: 150px;
+}
+main .right_wrap .delivery li .d_info {
+    width: calc(100% - 150px); color: #828282;
+}
+/* 옵션 선택 */
+main .right_wrap .select_contents {margin-bottom: 36px;}
+main .right_wrap .select_contents select {
+    width: 100%;
+    padding: 22px 20px; border-radius: 4px;
+    border: 1px solid #ddd; color: #828282;
+    background-image: url(../images/arrow_bottom.png);
+    background-repeat: no-repeat; background-position-y: center;
+    background-position-x: 96%;
+}
+main .right_wrap .select_contents #color {margin-bottom: 10px;}
+main .right_wrap .select_contents #color option {}
+main .right_wrap .select_contents #add {}
+main .right_wrap .select_contents #add option {}
+/* 사용자 수량, 주문금액 */
+main .right_wrap .order {
+    background-color: #f5f5f5;
+    padding: 20px; border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 36px;
+}
+main .right_wrap .order .name {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 14px; border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+main .right_wrap .order .name > p {
+    font-size: 1.13rem; font-weight: 600; letter-spacing: -0.02em;
+}
+main .right_wrap .order .name .product_num {display: flex; align-items: center;}
+main .right_wrap .order .name .product_num .minus,
+main .right_wrap .order .name .product_num .plus {
+    padding: 8px; border: 1px solid #ccc; border-radius: 4px;
+    background-color: #fff;
+}
+main .right_wrap .order .name .product_num .minus img {opacity: 0.3;}
+main .right_wrap .order .name .product_num .plus img {}
+main .right_wrap .order .name .product_num .num {
+    margin: 0 10px;
+    font-size: 1.25rem; letter-spacing: -0.02em;
+    margin-left: 10px;
+}
+main .right_wrap .order .order_price {
+    display: flex; justify-content: space-between;
+    align-items: center;
+}
+main .right_wrap .order .order_price span {
+    letter-spacing: -0.02em; font-weight: 600;
+    color: #828282;
+}
+main .right_wrap .order .order_price em {
+    font-size: 1.63rem; letter-spacing: -0.02em; font-weight: 600;
+}
+/* 장바구니, 바로구매 버튼 */
+main .right_wrap .order_btn {display: flex; justify-content: space-between;}
+main .right_wrap .order_btn .heart {
+    padding: 18px; border: 1px solid #ddd; border-radius: 4px;
+    background-color: #fff;
+}
+main .right_wrap .order_btn .heart img {width: 100%; opacity: 0.3;}
+main .right_wrap .order_btn button {
+    width: calc((100% - (10px * 2) - 66px) / 2);
+    padding: 20px 0; border: 1px solid #111;
+    border-radius: 4px;
+    font-size: 1.13rem; letter-spacing: -0.02em;
+}
+main .right_wrap .order_btn #cart {background-color: #fff;}
+main .right_wrap .order_btn #buy {background-color: #111; color: #fff;}
