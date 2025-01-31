@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper 옵션5. 수직 페이지전환과 이중슬라이드</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/swiper_op5.js" defer></script>
+    <style>
+        .new_slide_wrap {
+            width: 100%; height: 100vh;
+            /* max-width: 1200px; height: 500px; margin: 100px auto; */
+            background-color: aqua;
+        }
+        .new_slide_wrap > .swiper-wrapper {}
+        .new_slide_wrap > .swiper-wrapper > .swiper-slide {
+            font-size: 4rem; font-weight: 700;
+            text-align: center; line-height: 400px; color: #fff;
+            text-shadow: 0 0 40px rgba(0,0,0,0.3);
+            background-position: center; background-size: cover;
+        }
+        .new_slide_wrap > .swiper-wrapper > .slide1 {
+            background-image: url(./images/bnr1.jpg);
+        }
+        .new_slide_wrap > .swiper-wrapper > .slide2 {
+            background-image: url(./images/bnr2.jpg);
+        }
+        .new_slide_wrap > .swiper-wrapper > .slide3 {
+            background-image: url(./images/bnr3.jpg);
+        }
+        /* 2페이지 sns 포폴 swiper design */
+        .new_slide_wrap .slide2 h1 {padding-top: 70px;}
+        .new_slide_wrap .slide2 .sns_portfolio {
+            width: 1000px; height: 600px; margin: 50px auto 0;
+        }
+        .new_slide_wrap .slide2 .sns_portfolio .swiper-slide {}
+        .new_slide_wrap .slide2 .sns_portfolio .slide1 {background-color: aqua;}
+        .new_slide_wrap .slide2 .sns_portfolio .slide2 {background-color: lime;}
+        .new_slide_wrap .slide2 .sns_portfolio .slide3 {background-color: coral;}
+        .new_slide_wrap .slide2 .sns_portfolio .slide4 {background-color: yellow;}
+    </style>
+</head>
+<body>
+    <div class="swiper new_slide_wrap">
+        <!-- 실제 움직이는 슬라이드 부모 대상 -->
+        <div class="swiper-wrapper">
+            <!-- 개별 슬라이드(자식, 자손 태그 작성 자유) -->
+            <div class="swiper-slide slide1">Slide 1</div>
+            <!-- 2페이지 시작 -->
+            <div class="swiper-slide slide2">
+                <h1>Portfolio 2025</h1>
+                <div class="swiper sns_portfolio">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">Child 1</div>
+                        <div class="swiper-slide slide2">Child 2</div>
+                        <div class="swiper-slide slide3">Child 3</div>
+                        <div class="swiper-slide slide4">Child 4</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2페이지 종료 -->
+            <div class="swiper-slide slide3">Slide 3</div>
+            <div class="swiper-slide slide1">Slide 4</div>
+            <div class="swiper-slide slide2">Slide 5</div>
+            <div class="swiper-slide slide3">Slide 6</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper 옵션1. 슬라이드 전환과 무한루프</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/swiper_op1.js" defer></script>
+    <style>
+        .new_slide_wrap {
+            width: 800px; height: 400px; margin: 0 auto;
+            background-color: aqua;
+        }
+        .new_slide_wrap .swiper-wrapper {}
+        .new_slide_wrap .swiper-wrapper .swiper-slide {
+            font-size: 4rem; font-weight: 700;
+            text-align: center; line-height: 400px; color: #fff;
+            text-shadow: 0 0 40px rgba(0,0,0,0.3);
+            background-position: center; background-size: cover;
+        }
+        .new_slide_wrap .swiper-wrapper .slide1 {
+            background-image: url(./images/bnr1.jpg);
+        }
+        .new_slide_wrap .swiper-wrapper .slide2 {
+            background-image: url(./images/bnr2.jpg);
+        }
+        .new_slide_wrap .swiper-wrapper .slide3 {
+            background-image: url(./images/bnr3.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper new_slide_wrap">
+        <!-- 실제 움직이는 슬라이드 부모 대상 -->
+        <div class="swiper-wrapper">
+            <!-- 개별 슬라이드(자식, 자손 태그 작성 자유) -->
+            <div class="swiper-slide slide1">Slide 1</div>
+            <div class="swiper-slide slide2">Slide 2</div>
+            <div class="swiper-slide slide3">Slide 3</div>
+        </div>
+  </div>
+</body>
+</html>
